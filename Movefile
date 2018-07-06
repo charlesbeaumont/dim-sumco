@@ -1,0 +1,62 @@
+global:
+  sql_adapter: "default"
+local:
+  vhost: "http://dim-sumco.test"
+  wordpress_path: "/Users/charles/Sites/dim-sumco"
+
+  database:
+    name: "dim-sumco"
+    user: "root"
+    password: ""
+    host: "127.0.0.1"
+
+  paths:
+    wp_content: "/wp-content"
+    uploads: "/wp-content/uploads"
+    plugins: "/wp-content/plugins"
+    themes: "/wp-content/themes"
+    languages: "/wp-content/languages"
+
+staging:
+  vhost: "http://dim-sumco.lillehummer.digital"
+  wordpress_path: "/home/forge/dim-sumco.lillehummer.digital"
+
+  database:
+    name: "dim_sumco"
+    user: "dim_sumco"
+    password: "2stfigd7LYhxXVBYqvoZ"
+    host: "localhost"
+    # port: "3308" # Use just in case you have exotic server config
+
+  exclude:
+    - ".git/"
+    - ".gitignore"
+    - ".sass-cache/"
+    - "bin/"
+    - "tmp/*"
+    - "Gemfile*"
+    - "Movefile"
+    - "wp-config.php"
+    - "app/*.sql"
+    - ".DS_Store"
+    - "node_modules"
+    - "bower"
+    - ".DS_Store"
+    - "src"
+    - ".sublime-gulp.cache"
+    - "bower.json"
+    - "package.json"
+    - ".bowerrc"
+    - ".git"
+
+  paths:
+    wp_content: "wp-content"
+    uploads: "wp-content/uploads"
+    plugins: "wp-content/plugins"
+    themes: "wp-content/themes"
+    languages: "wp-content/languages"
+
+  ssh:
+    host: "lillehummer.digital"
+    user: "forge"
+    rsync_options: "--verbose"

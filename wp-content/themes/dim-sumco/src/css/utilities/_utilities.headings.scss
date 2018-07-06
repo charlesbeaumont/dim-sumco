@@ -1,0 +1,33 @@
+
+/**
+ * UTILITIES > HEADINGS
+ */
+
+/**
+ * Redefine all of our basic heading styles against utility classes so as to
+ * allow for double stranded heading hierarchy, e.g. we semantically need an H2,
+ * but we want it to be sized like an H1:
+ *
+ *   <h2 class="u-h1"></h2>
+ *
+ */
+
+.u-h1 {
+  @include text-h1;
+}
+
+.u-h2 {
+  @include text-h2;
+}
+
+.u-h3 {
+  @include text-h3;
+}
+
+.u-h4 {
+  @include text-h4;
+}
+
+.u-h5 {
+  @include text-h5;
+}

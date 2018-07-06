@@ -1,0 +1,96 @@
+{
+    "name": "dim-sumco",
+    "description": "WordPress starter theme created by lillehummer.",
+    "version": "0.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/lillehummer/dim-sumco",
+    "private": true,
+    "maintainers": [
+      {
+        "name": "Charles Beaumont",
+        "email": "charles@lillehummer.nl",
+        "web": "https://lillehummer.nl"
+      }
+    ],
+    "ava": {
+      "require": [
+        "babel-register",
+        "./test/helpers/setup-browser-env.js"
+      ]
+    },
+    "lint-staged": {
+      "*.{js,vue}": [
+        "eslint --fix",
+        "git add"
+      ]
+    },
+    "dependencies": {
+      "@babel/core": "^7.0.0-0",
+      "@babel/plugin-syntax-dynamic-import": "7.0.0-beta.47",
+      "@babel/preset-env": "7.0.0-beta.46",
+      "@babel/preset-stage-3": "^7.0.0-beta.46",
+      "autoprefixer": "*",
+      "axios": "*",
+      "babel-loader": "8.0.0-beta.2",
+      "babel-polyfill": "*",
+      "browser-sync": "^2.24.4",
+      "clean-webpack-plugin": "*",
+      "css-loader": "*",
+      "css-mqpacker": "*",
+      "eslint": "*",
+      "eslint-config-standard": "*",
+      "eslint-plugin-import": "*",
+      "eslint-plugin-node": "*",
+      "eslint-plugin-promise": "*",
+      "eslint-plugin-standard": "*",
+      "eslint-plugin-vue": "*",
+      "extract-text-webpack-plugin": "^4.0.0-beta.0",
+      "gulp": "*",
+      "gulp-changed": "*",
+      "gulp-imagemin": "*",
+      "gulp-notify": "*",
+      "gulp-plumber": "*",
+      "gulp-util": "*",
+      "imagemin-pngquant": "*",
+      "inuitcss": "*",
+      "is_js": "*",
+      "jquery": "*",
+      "lodash": "*",
+      "mini-css-extract-plugin": "*",
+      "modernizr": "*",
+      "node-sass": "^4.9.0",
+      "normalize.css": "*",
+      "optimize-css-assets-webpack-plugin": "*",
+      "postcss-loader": "*",
+      "ramda": "*",
+      "sanitize.css": "*",
+      "sass-loader": "*",
+      "sass-mq": "*",
+      "style-loader": "*",
+      "uglifyjs-webpack-plugin": "*",
+      "url-loader": "*",
+      "vue": "*",
+      "vue-loader": "*",
+      "vue-template-compiler": "*",
+      "webfontloader": "*",
+      "webpack": "*",
+      "webpack-bundle-analyzer": "*",
+      "webpack-cli": "*",
+      "webpack-dev-middleware": "^3.1.3",
+      "webpack-hot-middleware": "^2.22.1",
+      "webpack-manifest-plugin": "*",
+      "webpack-monitor": "*"
+    },
+    "devDependencies": {
+      "ava": "*",
+      "nightmare": "*"
+    },
+    "scripts": {
+      "production": "webpack --progress --hide-modules --config=webpack.production.config.js",
+      "dev": "gulp dev",
+      "export": "wp search-replace dim-sumco.test lillehummer.nl --export=export.sql",
+      "nightmare": "node ./test/nightmare.js",
+      "analyze": "plato -r -d report src/js",
+      "precommit": "lint-staged"
+    }
+  }

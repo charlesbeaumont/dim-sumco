@@ -1,0 +1,42 @@
+
+/**
+ * OBJECTS > CONTAINER
+ */
+
+/**
+ * Page-level constraining and wrapping elements.
+ */
+
+$wrapper-width: 1200px !default;
+
+.o-container {
+  @include clearfix();
+  padding-right: $global-spacing-unit;
+  padding-left:  $global-spacing-unit;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: $wrapper-width;
+}
+
+/* Size variants.
+   ========================================================================== */
+
+.o-container--tiny {
+  padding-right: $global-spacing-unit-tiny;
+  padding-left:  $global-spacing-unit-tiny;
+}
+
+.o-container--small {
+  padding-right: $global-spacing-unit-small;
+  padding-left:  $global-spacing-unit-small;
+}
+
+.o-container--large {
+  padding-right: $global-spacing-unit-large;
+  padding-left:  $global-spacing-unit-large;
+}
+
+.o-container--huge {
+  padding-right: $global-spacing-unit-huge;
+  padding-left:  $global-spacing-unit-huge;
+}

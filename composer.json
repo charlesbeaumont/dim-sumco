@@ -1,0 +1,46 @@
+{
+    "name"        : "lillehummer/dim-sumco",
+    "description" : "WordPress package developed by Lille Hummer.",
+    "type"        : "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url" : "https://wpackagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "http://lillehummer:satis@packages.lillehummer.digital"
+        }
+    ],
+    "require"     : {
+        "vlucas/phpdotenv": "*",
+        "wpackagist-plugin/wordpress-seo": "*",
+        "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "*",
+        "wpackagist-plugin/google-analytics-for-wordpress": "*",
+        "wpackagist-plugin/regenerate-thumbnails": "*",
+        "wpackagist-plugin/google-authenticator": "*",
+        "wpackagist-plugin/worker": "*",
+        "wpackagist-plugin/kraken-image-optimizer": "*",
+        "wpackagist-plugin/multilingual-press": "*",
+        "wpackagist-plugin/memcached-redux": "*",
+        "lillehummer/advanced-custom-fields-pro": "*",
+        "lillehummer/wp-rocket": "*"
+    },
+    "require-dev": {
+        "wpackagist-plugin/query-monitor": "*"
+    },
+    "extra"       : {
+        "installer-paths"      : {
+            "wp-content/plugins/{$name}"   : ["type:wordpress-plugin"],
+            "wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
+            "wp-content/themes/{$name}"    : ["type:wordpress-theme"]
+        }
+    },
+    "scripts": {
+        "pre-update-cmd": "sh ./src/pre-install.sh",
+        "post-update-cmd": "sh ./src/post-install.sh"
+    },
+    "config": {
+        "secure-http": false
+    }
+}

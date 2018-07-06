@@ -1,0 +1,32 @@
+
+/**
+ * SETTINGS > GLOBALS
+ */
+
+// Containers
+$global-max-width: 30rem;
+
+// Grid
+$spacing-gutter: $global-font-size;
+
+// UI elements
+$global-navigation-height: 10rem;
+$global-border-radius: 0.3rem;
+
+// Spacings
+$spacing-base: $global-font-size;
+
+$spacing-tiny: $spacing-base / 8;
+$spacing-xsmall: $spacing-base / 4;
+$spacing-small: $spacing-base / 2;
+$spacing-medium: $spacing-base;
+$spacing-large: $spacing-base * 2;
+$spacing-xlarge: $spacing-base * 4;
+$spacing-huge: $spacing-base * 8;
+
+// Z-indices
+$z-index-header: 1;
+$z-index-overlay: 2;
+$z-index-fixed: 3;
+$z-index-cover: 4;
+$z-index-modal: 5;

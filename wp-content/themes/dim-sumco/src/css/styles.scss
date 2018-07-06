@@ -1,0 +1,81 @@
+
+/**
+ * Settings.
+ */
+@import 'settings/settings.core';
+@import 'settings/settings.globals';
+@import 'settings/settings.responsive';
+@import 'settings/settings.colors';
+@import 'settings/settings.animations';
+@import 'settings/settings.typography';
+
+/**
+ * Tools
+ */
+@import 'tools/tools.animation';
+@import 'tools/tools.clearfix';
+@import 'tools/tools.flexbox';
+@import 'tools/tools.placeholder';
+@import 'tools/tools.positioning';
+@import 'tools/tools.reset';
+@import 'tools/tools.stacking-context';
+@import 'tools/tools.text';
+@import 'tools/tools.transitions';
+@import 'tools/tools.typography';
+
+/**
+ * Generic
+ */
+@import '../../node_modules/sanitize.css/sanitize';
+@import 'generic/generic.reset';
+@import 'generic/generic.fonts';
+@import 'generic/generic.shared';
+@import 'generic/generic.wordpress';
+
+/**
+ * Elements
+ */
+@import 'elements/elements.images';
+@import 'elements/elements.tables';
+@import 'elements/elements.headings';
+@import 'elements/elements.page';
+
+/**
+ * Objects
+ */
+
+@import 'objects/objects.background-image';
+@import 'objects/objects.box';
+@import 'objects/objects.container';
+@import 'objects/objects.content-wrapper';
+@import 'objects/objects.grid';
+@import 'objects/objects.page';
+@import 'objects/objects.ratio';
+@import 'objects/objects.section';
+
+
+/**
+ * Components
+ */
+@import 'components/components.footer';
+@import 'components/components.navigation';
+
+/**
+ * Utilities
+ */
+@import 'utilities/utilities.background-image';
+@import 'utilities/utilities.clearfix';
+@import 'utilities/utilities.fills';
+@import 'utilities/utilities.headings';
+@import 'utilities/utilities.hide';
+@import 'utilities/utilities.spacing';
+@import 'utilities/utilities.widths';
+
+
+/*
+VENDOR
+------
+Any external dependencies, preferrably installed via yarn.
+ */
+//@import '../../node_modules/module/include'; // Preffered method
+//@import 'vendor/vendor.example';
