@@ -1,0 +1,27 @@
+
+.c-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.c-header__inner {
+  padding: $spacing-large;
+}
+
+.c-header__breadcrumbs {
+  display: flex;
+  font-size: $font-size-xlarge;
+  color: $color-white;
+  font-weight: 600;
+}
+
+.c-header__breadcrumb {
+  margin-right: $spacing-xlarge;
+  text-transform: lowercase;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

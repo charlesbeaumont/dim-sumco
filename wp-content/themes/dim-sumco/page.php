@@ -9,33 +9,14 @@
 
 get_header(); ?>
 
-<div class="content">
+<main role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
 
-	<main class="main clearfix" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    <?php while ( have_posts() ) : the_post(); ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'inc/blocks' ); ?>
 
-		<article <?php post_class( 'article clearfix' ); ?>>
+    <?php endwhile; ?>
 
-			<header class="article__header">
-				<h1 itemprop="headline"><?php the_title(); ?></h1>
-			</header>
-
-			<section class="article__content clearfix" itemprop="articleBody">
-				<?php the_content(); ?>
-			</section>
-
-			<footer class="article__footer">
-			</footer>
-
-		</article>
-
-		<?php endwhile; ?>
-
-	</main>
-
-	<?php get_sidebar(); ?>
-
-</div>
+</main>
 
 <?php get_footer();

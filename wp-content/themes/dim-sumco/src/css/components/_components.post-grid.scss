@@ -1,0 +1,22 @@
+
+.c-post-grid {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: calc(100% + #{$spacing-xlarge});
+  margin-left: -$spacing-xlarge;
+}
+
+.c-post-grid__entry {
+  width: 50%;
+}
+
+.c-post-grid__featured {
+  height: 30rem;
+}
+
+.c-post-grid__title {
+  padding: $spacing-medium $spacing-large;
+  font-size: $font-size-medium;
+  font-weight: 600;
+}

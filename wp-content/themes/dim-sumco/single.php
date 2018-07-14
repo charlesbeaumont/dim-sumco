@@ -9,20 +9,18 @@
 
 get_header(); ?>
 
-<div class="content">
+<main role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
 
-	<main class="main clearfix" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+    <?php while ( have_posts() ) : the_post(); ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'inc/blocks' ); ?>
 
-			<?php get_template_part( 'post-formats/format', get_post_format() ); ?>
+    <?php endwhile; ?>
 
-		<?php endwhile; ?>
+    <?php get_template_part( 'inc/journal' ); ?>
 
-	</main>
+    <?php get_template_part( 'inc/newsletter' ); ?>
 
-	<?php get_sidebar(); ?>
-
-</div>
+</main>
 
 <?php get_footer();

@@ -1,0 +1,20 @@
+
+.c-logo {
+  &,
+  &:link,
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &.-white {
+    path {
+      fill: $color-white;
+    }
+  }
+
+  width: 11.8rem;
+  display: inline-block;
+}

@@ -1,0 +1,22 @@
+
+.c-hero {
+  height: 100vh;
+  max-height: 800px;
+}
+
+.rte-hero {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $color-yellow;
+    margin-bottom: $spacing-xlarge;
+  }
+}
+
+.rte-hero--home {
+  h1 {
+    margin-bottom: $spacing-medium;
+  }
+}

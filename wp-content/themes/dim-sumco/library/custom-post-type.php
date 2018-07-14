@@ -21,10 +21,10 @@ add_action( 'after_switch_theme', 'hummer_flush_rewrite_rules' );
 function hummer_custom_post_types() {
 
 	$labels = array(
-		'name'                  => _x( 'Post Types', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Post Type', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Post Types', 'text_domain' ),
-		'name_admin_bar'        => __( 'Post Type', 'text_domain' ),
+		'name'                  => _x( 'Work', 'Case General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Case', 'Case Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Work', 'text_domain' ),
+		'name_admin_bar'        => __( 'Case', 'text_domain' ),
 		'archives'              => __( 'Item Archives', 'text_domain' ),
 		'attributes'            => __( 'Item Attributes', 'text_domain' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
@@ -50,12 +50,12 @@ function hummer_custom_post_types() {
 		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
 	);
 	$args = array(
-		'label'                 => __( 'Item', 'text_domain' ),
-		'description'           => __( 'Items', 'text_domain' ),
+		'label'                 => __( 'Case', 'text_domain' ),
+		'description'           => __( 'Cases', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'sticky' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
-		'hierarchical'          => true,
+		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
@@ -68,54 +68,12 @@ function hummer_custom_post_types() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 		'show_in_rest' 			=> false,
-		'rest_base' 			=> 'item',
-		'rewrite'				=> array( 'slug' => 'item', 'with_front' => false ),
-		'has_archive' 			=> 'item',
-		'menu_icon' 			=> '',
+		'rest_base' 			=> 'case',
+		'rewrite'				=> array( 'slug' => 'case', 'with_front' => false ),
+		'has_archive' 			=> 'case',
+		'menu_icon' 			=> 'dashicons-lightbulb',
 	);
-	register_post_type( 'item', $args );
+	register_post_type( 'case', $args );
 
 }
 add_action( 'init', 'hummer_custom_post_types' );
-
-/**
- * Declare custom taxonomies.
- */
-function hummer_custom_taxonomies() {
-
-	$labels = array(
-		'name'                       	=> 'Taxonomies',
-		'singular_name'              	=> 'Taxonomy',
-		'menu_name'                  	=> 'Taxonomy',
-		'all_items'                  	=> 'All Items',
-		'parent_item'                	=> 'Parent Item',
-		'parent_item_colon'          	=> 'Parent Item:',
-		'new_item_name'              	=> 'New Item Name',
-		'add_new_item'               	=> 'Add New Item',
-		'edit_item'                  	=> 'Edit Item',
-		'update_item'                	=> 'Update Item',
-		'view_item'                  	=> 'View Item',
-		'separate_items_with_commas' 	=> 'Separate items with commas',
-		'add_or_remove_items'        	=> 'Add or remove items',
-		'choose_from_most_used'      	=> 'Choose from the most used',
-		'popular_items'              	=> 'Popular Items',
-		'search_items'              	=> 'Search Items',
-		'not_found'                 	=> 'Not Found',
-		'no_terms'                  	=> 'No items',
-		'items_list'                	=> 'Items list',
-		'items_list_navigation'     	=> 'Items list navigation',
-	);
-	$args = array(
-		'labels'                    	=> $labels,
-		'hierarchical'              	=> false,
-		'public'                    	=> true,
-		'show_ui'                   	=> true,
-		'show_admin_column'         	=> true,
-		'show_in_nav_menus'         	=> true,
-		'show_tagcloud'             	=> true,
-		'rewrite' 						=> array( 'slug' => 'taxonomy' ),
-	);
-	register_taxonomy( 'taxonomy', array( 'post' ), $args );
-
-}
-add_action( 'init', 'hummer_custom_taxonomies', 0 );

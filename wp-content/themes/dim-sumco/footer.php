@@ -9,25 +9,14 @@
 
 ?>
 
-	<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+	<div class="o-section">
+        <div class="o-section__border u-fill--yellow">
 
-		<div class="footer__inner clearfix">
-
-			<nav role="navigation navigation--footer" class="footer-links">
-				<?php
-				wp_nav_menu(array(
-					'container' => false,
-					'theme_location' => 'footer-links',
-					'depth' => 0,
-				));
-				?>
-			</nav>
-
-			<p class="footer__copyright">&copy; <?php echo esc_url( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>.</p>
-
-		</div>
-
-	</footer>
+        </div>
+        <div class="o-section__content u-fill--grey">
+            <p class="c-footer__copyright">&copy;2018 dim-sum All right reserved.</p>
+        </div>
+    </div>
 
 </div>
 

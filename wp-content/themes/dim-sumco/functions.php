@@ -49,17 +49,17 @@ add_action( 'after_setup_theme', 'hummer_ahoy' );
 function hummer_setup_theme() {
 	update_option( 'image_default_link_type','none' );
 
-	update_option( 'thumbnail_size_w', 100 );
-	update_option( 'thumbnail_size_h', 100 );
-	update_option( 'thumbnail_crop', 1 );
-	update_option( 'medium_size_w', 100 );
-	update_option( 'medium_size_h', 100 );
-	update_option( 'medium_crop', 1 );
-	update_option( 'large_size_w', 100 );
-	update_option( 'large_size_h', 100 );
-	update_option( 'large_crop', 1 );
+	update_option( 'thumbnail_size_w', 400 );
+	update_option( 'thumbnail_size_h', 9999 );
+	update_option( 'thumbnail_crop', 0 );
+	update_option( 'medium_size_w', 800 );
+	update_option( 'medium_size_h', 9999 );
+	update_option( 'medium_crop', 0 );
+	update_option( 'large_size_w', 1600 );
+	update_option( 'large_size_h', 9999 );
+	update_option( 'large_crop', 0 );
 }
-add_action( 'after_switch_theme', 'hummer_setup_theme' );
+add_action( 'after_setup_theme', 'hummer_setup_theme' );
 
 /**
  * Add image sizes.
@@ -110,4 +110,19 @@ function hummer_register_sidebars() {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
+}
+
+/**
+ * Theme Options
+ */
+
+if( function_exists('acf_add_options_page') ) {
+
+    // add parent
+   $parent = acf_add_options_page(array(
+       'page_title' 	=> 'Theme Options',
+       'menu_title' 	=> 'Theme Options',
+       'redirect' 		=> false
+   ));
+
 }

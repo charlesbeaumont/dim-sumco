@@ -1,0 +1,11 @@
+
+a {
+  &,
+  &:link,
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: $color-grey;
+  }
+}

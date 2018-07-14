@@ -11,6 +11,7 @@
   @include text-heading();
   font-size: $font-size-h1;
   line-height: $font-line-height-small;
+  font-weight: 600;
 
   @include mq($until: tablet) {
     font-size: $font-size-h2;
@@ -21,6 +22,7 @@
   @include text-heading();
   font-size: $font-size-h2;
   line-height: $font-line-height-small;
+  font-weight: 600;
 
   @include mq($until: tablet) {
     font-size: $font-size-h3;
