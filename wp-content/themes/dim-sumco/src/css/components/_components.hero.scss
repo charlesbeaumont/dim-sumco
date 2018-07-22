@@ -11,12 +11,14 @@
   h4,
   h5 {
     color: $color-yellow;
-    margin-bottom: $spacing-xlarge;
+    margin-bottom: $spacing-large;
   }
-}
 
-.rte-hero--home {
-  h1 {
-    margin-bottom: $spacing-medium;
+  p {
+    margin-bottom: $spacing-large;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

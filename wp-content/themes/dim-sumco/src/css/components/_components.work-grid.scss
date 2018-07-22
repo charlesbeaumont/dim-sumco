@@ -1,3 +1,16 @@
+.c-work-grid__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.c-work-grid__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 47rem;
+  height: 31rem;
+  background: $color-black;
+}
 
 .c-work-grid {
   display: flex;

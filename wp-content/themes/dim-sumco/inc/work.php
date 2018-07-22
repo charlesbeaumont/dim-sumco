@@ -3,7 +3,8 @@
     <div class="o-section__border u-fill--yellow">
         <div class="o-section__border-inner"></div>
     </div>
-    <div class="o-section__content">
+    <div class="c-work-grid__wrapper o-section__content">
+        <div class="c-work-grid__background o-background-image -contain"></div>
         <div class="o-section__content-inner -large">
             <h2 class="u-color--grey">work</h2>
 

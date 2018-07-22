@@ -17,5 +17,11 @@ body {
   font-family: $font-family-body;
   font-size: $font-size-body;
   line-height: $font-line-height-medium;
+  font-weight: 500;
   min-height: 100%;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
