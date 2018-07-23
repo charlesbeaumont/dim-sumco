@@ -19,6 +19,10 @@ body {
   line-height: $font-line-height-medium;
   font-weight: 500;
   min-height: 100%;
+
+  @include mq($until: tablet) {
+    font-size: 1.3rem;
+  }
 }
 
 * {

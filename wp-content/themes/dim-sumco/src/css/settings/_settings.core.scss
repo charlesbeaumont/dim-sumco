@@ -5,7 +5,7 @@
 $global-font-size: 16px;
 $global-line-height: 20px;
 
-$global-spacing-unit: round($global-line-height) !default;
+$global-spacing-unit: round($global-font-size) !default;
 
 $global-spacing-unit-factor-tiny:   0.25 !default;
 $global-spacing-unit-factor-small:  0.5  !default;

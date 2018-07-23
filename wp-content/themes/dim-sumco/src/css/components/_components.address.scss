@@ -1,0 +1,11 @@
+
+.c-address {
+  position: fixed;
+  bottom: $spacing-large;
+  left: $spacing-large;
+  font-size: $font-size-small;
+
+  @include mq($until: tablet) {
+    display: none;
+  }
+}

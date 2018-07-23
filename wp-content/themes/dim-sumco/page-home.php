@@ -21,7 +21,6 @@ get_header(); ?>
 
         <div class="o-section__border u-fill--grey">
             <div class="o-section__border-inner">
-                <?php echo nl2br( get_field( 'contact', 'option' ) ); ?>
             </div>
         </div>
         <div class="o-section__content u-fill--grey">
@@ -41,7 +40,8 @@ get_header(); ?>
         </div>
         <div class="o-section__content u-fill--grey">
             <div class="o-section__content-inner">
-                <h2 class="u-margin-bottom-huge u-color--grey">current situation in Amsterdam</h2>
+                <h2 class="u-margin-bottom-none u-color--grey">current situation in Amsterdam</h2>
+                <p class="u-margin-bottom-huge" data-time></p>
 
                 <p class="u-h2"><span class="u-color--yellow">working on:</span> Consumer research for Nike.</p>
                 <p class="u-h2"><span class="u-color--yellow">listening to:</span> Marvin Gaye - Motown Unreleased 1965.</p>

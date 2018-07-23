@@ -1,4 +1,4 @@
-<section class="o-section -spacing-xlarge">
+<section class="o-section -spacing-mlarge">
 
     <div class="o-section__border u-fill--yellow">
         <div class="o-section__border-inner"></div>

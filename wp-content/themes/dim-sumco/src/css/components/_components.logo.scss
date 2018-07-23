@@ -1,5 +1,14 @@
 
 .c-logo {
+  position: fixed;
+  top: $spacing-large + 3px;
+  left: $spacing-large;
+  z-index: 300;
+
+  @include mq($until: tablet) {
+    display: none;
+  }
+
   &,
   &:link,
   &:hover,

@@ -3,20 +3,39 @@
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: calc(100% + #{$spacing-xlarge});
-  margin-left: -$spacing-xlarge;
+  width: calc(100% + #{$spacing-mlarge});
+  margin-left: -$spacing-mlarge;
+
+  @include mq($until: tablet) {
+    width: calc(100% + #{$spacing-medium});
+    margin-left: -$spacing-medium;
+  }
 }
 
 .c-post-grid__entry {
   width: 50%;
+
+  @include mq($until: tablet) {
+    width: 100%;
+  }
 }
 
 .c-post-grid__featured {
   height: 30rem;
+  display: block;
+
+  @include mq($until: tablet) {
+    height: 24rem;
+  }
 }
 
 .c-post-grid__title {
-  padding: $spacing-medium $spacing-large;
+  padding: $spacing-medium $spacing-mlarge;
   font-size: $font-size-medium;
   font-weight: 500;
+
+  @include mq($until: tablet) {
+    padding: $spacing-medium;
+    font-size: 1.3rem;
+  }
 }

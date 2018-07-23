@@ -69,7 +69,7 @@ let config = {
       new UglifyJsPlugin({
         cache: true,
         parallel: true,
-        sourceMap: true // set to true if you want JS source maps
+        sourceMap: false
       }),
       new OptimizeCSSAssetsPlugin({})
     ]
@@ -92,7 +92,7 @@ let config = {
     }),
     new WebpackMonitor({
       capture: true,
-      launch: true
+      // launch: true
     }),
     new BundleAnalyzerPlugin()
   ],

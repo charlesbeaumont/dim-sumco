@@ -15,7 +15,6 @@ get_header(); ?>
 
         <div class="o-section__border u-fill--yellow u-color--white">
             <div class="o-section__border-inner">
-                <?php echo nl2br( get_field( 'contact', 'option' ) ); ?>
             </div>
         </div>
         <?php $image = get_field( 'case_background' ); ?>
