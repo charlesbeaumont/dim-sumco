@@ -88,7 +88,7 @@
 }
 
 .o-section__border {
-  width: 18%;
+  width: 24rem;
   padding-left: $spacing-large;
   padding-right: $spacing-large;
   display: flex;
@@ -112,8 +112,8 @@
 }
 
 .o-section__content {
-  width: 82%;
-  padding-left: $spacing-mlarge;
+  flex: 1;
+  padding-left: $spacing-mlarge * 2;
   padding-right: $spacing-mlarge;
   display: flex;
   align-items: center;
