@@ -1,0 +1,29 @@
+
+.c-newsletter__input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid $color-white;
+  color: $color-white;
+  width: 32rem;
+  font-weight: 500;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color-white;
+  }
+
+  &::-moz-placeholder {
+    color: $color-white;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color-white;
+  }
+
+  &:-moz-placeholder {
+    color: $color-white;
+  }
+}

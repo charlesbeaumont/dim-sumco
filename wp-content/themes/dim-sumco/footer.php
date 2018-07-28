@@ -10,7 +10,7 @@
 ?>
 
 	<div class="o-section">
-        <div class="o-section__border u-fill--yellow">
+        <div class="o-section__border -white-logo u-fill--yellow">
 
         </div>
         <div class="o-section__content u-fill--grey">

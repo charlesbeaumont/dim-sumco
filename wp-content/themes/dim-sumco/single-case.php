@@ -13,7 +13,7 @@ get_header(); ?>
 
     <section class="c-hero o-section u-text-xlarge">
 
-        <div class="o-section__border u-fill--yellow u-color--white">
+        <div class="o-section__border -white-logo u-fill--yellow u-color--white">
             <div class="o-section__border-inner">
             </div>
         </div>

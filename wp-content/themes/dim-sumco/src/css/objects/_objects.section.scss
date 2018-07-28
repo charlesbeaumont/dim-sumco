@@ -88,13 +88,24 @@
 }
 
 .o-section__border {
-  width: 24rem;
+  width: 20rem;
   padding-left: $spacing-large;
   padding-right: $spacing-large;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   font-size: $font-size-small;
+  background: url('/wp-content/themes/dim-sumco/img/logo-dim-sum-grey.svg') 3.2rem 3.9rem no-repeat, url('/wp-content/themes/dim-sumco/img/text-contact-grey.svg') 3.2rem calc(100% - 3.9rem) no-repeat;
+  background-size: 11.8rem auto, 13.5rem auto;
+  background-attachment: fixed, fixed;
+
+  &.-white-logo {
+    background-image: url('/wp-content/themes/dim-sumco/img/logo-dim-sum-white.svg'), url('/wp-content/themes/dim-sumco/img/text-contact-white.svg');
+  }
+
+  &.-no-logo {
+    background: none;
+  }
 
   @include mq($until: tablet) {
     width: $spacing-medium;
@@ -114,9 +125,11 @@
 .o-section__content {
   flex: 1;
   padding-left: $spacing-mlarge * 2;
-  padding-right: $spacing-mlarge;
+  padding-right: $spacing-mlarge * 2;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 
   @include mq($until: tablet) {
     width: calc(100% - #{$spacing-medium});
@@ -126,10 +139,10 @@
 }
 
 .o-section__content-inner {
-  max-width: 100%;
-  width: 80rem;
+  max-width: 80rem;
+  width: auto;
 
   &.-large {
-    width: 100rem;
+    // width: 100rem;
   }
 }
