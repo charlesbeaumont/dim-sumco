@@ -1,4 +1,9 @@
 
+.c-newsletter {
+  padding-top: $spacing-small !important;
+  padding-bottom: $spacing-small !important;
+}
+
 .c-newsletter__input {
   background: none;
   border: none;
@@ -6,6 +11,10 @@
   color: $color-white;
   width: 32rem;
   font-weight: 500;
+
+  @include mq($until: tablet) {
+    width: 21.5rem;
+  }
 
   &:focus {
     outline: none;

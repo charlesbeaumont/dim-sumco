@@ -7,7 +7,7 @@
   margin-left: -$spacing-mlarge * 2;
 
   @include mq($until: tablet) {
-    width: calc(100% + #{$spacing-medium});
+    width: calc(100% + #{$spacing-medium * 2});
     margin-left: -$spacing-medium;
   }
 }
@@ -24,10 +24,26 @@
   height: 0;
   padding-bottom: 65%;
   display: block;
+  position: relative;
 
   @include mq($until: tablet) {
     height: 24rem;
   }
+}
+
+.c-post-grid__video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.c-post-grid__video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .c-post-grid__title {

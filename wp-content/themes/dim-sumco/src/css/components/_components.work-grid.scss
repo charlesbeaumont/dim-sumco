@@ -20,6 +20,11 @@
   position: relative;
   width: calc(100% + #{$spacing-mlarge * 4});
   margin-left: -$spacing-mlarge * 2;
+
+  @include mq($until: tablet) {
+    width: calc(100% + #{$spacing-medium * 2});
+    margin-left: -$spacing-medium;
+  }
 }
 
 .c-work-grid__background {

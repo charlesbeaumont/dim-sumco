@@ -2,6 +2,7 @@
 
 import '../css/styles.scss'
 
+import navigation from './modules/navigation'
 import time from './modules/time'
 import workGrid from './modules/work-grid'
 
@@ -10,6 +11,7 @@ if (module.hot) {
 }
 
 const loadPage = () => {
+  navigation.init()
   time.init()
   workGrid.init()
 }

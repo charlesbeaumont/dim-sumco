@@ -17,12 +17,15 @@ get_header(); ?>
             <div class="o-section__border-inner">
             </div>
         </div>
+
         <?php $image = get_field( 'case_background' ); ?>
-        <div class="o-section__content u-fill--grey o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');">
-            <div class="o-section__content-inner rte-hero">
-                <?php the_sub_field( 'content' ); ?>
+        <?php if ( get_field( 'case_video' ) ) : ?>
+            <div class="o-section__content u-fill--grey o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');">
             </div>
-        </div>
+        <?php else : ?>
+            <div class="o-section__content u-fill--grey o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');">
+            </div>
+        <?php endif; ?>
 
     </section>
 
