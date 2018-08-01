@@ -41,7 +41,7 @@
 }
 
 .c-work-grid__entry {
-  width: 25%;
+  width: calc(100% / 3);
   position: relative;
   z-index: 300;
 
@@ -59,7 +59,7 @@
 .c-work-grid__link {
   height: 0;
   width: 100%;
-  padding-bottom: 70%;
+  padding-bottom: 50%;
   opacity: 0.3;
   transition: opacity 0.3s ease-out;
   display: block;

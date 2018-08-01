@@ -1,11 +1,11 @@
-<section class="o-section -spacing-xlarge">
+<section class="o-section -spacing-xlarge -fill-height">
 
     <div class="o-section__border -white-logo u-fill--yellow">
         <div class="o-section__border-inner"></div>
     </div>
     <div class="c-work-grid__wrapper o-section__content">
         <div class="c-work-grid__container o-section__content-inner -large">
-            <h2 class="c-work-grid__heading u-color--grey">work</h2>
+            <h2 class="u-text-small c-work-grid__heading u-color--grey u-text-weight-regular">work</h2>
         </div>
         <div class="c-work-grid" data-work-grid>
             <div class="c-work-grid__background o-background-image -contain" data-work-grid-background></div>

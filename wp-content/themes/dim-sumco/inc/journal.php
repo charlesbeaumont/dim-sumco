@@ -1,11 +1,11 @@
-<section class="o-section -spacing-none">
+<section class="o-section -spacing-none -fill-height">
 
     <div class="o-section__border u-fill--grey">
         <div class="o-section__border-inner"></div>
     </div>
     <div class="o-section__content">
         <div class="o-section__content-inner -large">
-            <h2 class="u-margin-top-large u-color--grey">latest from our journal</h2>
+            <h2 class="u-text-small u-margin-top-large u-color--grey u-text-weight-regular">latest from our journal</h2>
         </div>
 
         <div class="c-post-grid">
@@ -31,7 +31,7 @@
                 <?php endif; ?>
                 <div class="c-post-grid__title">
                     <div class="u-color--yellow"><?php the_title(); ?></div>
-                    <a href="<?php the_permalink(); ?>">Read more</a>
+                    <a href="<?php the_permalink(); ?>" class="u-text-weight-regular">Read more</a>
                 </div>
             </div>
             <?php endwhile; wp_reset_postdata(); ?>

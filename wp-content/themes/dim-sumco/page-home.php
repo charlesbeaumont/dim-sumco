@@ -33,20 +33,19 @@ get_header(); ?>
 
     <?php get_template_part( 'inc/work' ); ?>
 
-    <section class="o-section -spacing-xlarge">
+    <section class="o-section -spacing-xlarge -fill-height">
 
         <div class="o-section__border">
             <div class="o-section__border-inner"></div>
         </div>
         <div class="o-section__content u-fill--grey">
             <div class="o-section__content-inner">
-                <h2 class="u-margin-bottom-small u-color--grey">current situation in Amsterdam</h2>
-                <p class="u-margin-bottom-huge u-text-small" data-time></p>
+                <h2 class="u-text-small u-margin-bottom-huge u-color--grey u-text-weight-regular">current situation in Amsterdam - <span data-time></span></h2>
 
-                <p class="u-h2"><span class="u-color--yellow">working on:</span> Consumer research for Nike.</p>
-                <p class="u-h2"><span class="u-color--yellow">listening to:</span> Marvin Gaye - Motown Unreleased 1965.</p>
-                <p class="u-h2"><span class="u-color--yellow">watching:</span> Billions.</.p>
-                <p class="u-h2"><span class="u-color--yellow">reading:</span> Zadie Smith.</.p>
+                <p class="u-h2">working on: <span class="u-text-weight-regular">Consumer research for Nike.</span></p>
+                <p class="u-h2">listening to: <span class="u-text-weight-regular">Marvin Gaye - Motown Unreleased 1965.</span></p>
+                <p class="u-h2">watching: <span class="u-text-weight-regular">Billions.</span></p>
+                <p class="u-h2">reading: <span class="u-text-weight-regular">Zadie Smith.</span></p>
             </div>
         </div>
 
