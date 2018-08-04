@@ -2,6 +2,8 @@
 .c-newsletter {
   padding-top: $spacing-small !important;
   padding-bottom: $spacing-small !important;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 
 .c-newsletter__input {
@@ -11,6 +13,7 @@
   color: $color-white;
   width: 32rem;
   font-weight: 500;
+  font-size: 2.5rem;
 
   @include mq($until: tablet) {
     width: 21.5rem;

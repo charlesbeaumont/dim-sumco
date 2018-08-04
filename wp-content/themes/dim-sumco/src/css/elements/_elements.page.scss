@@ -6,7 +6,7 @@
 ////
 
 html {
-  background-color: $color-background;
+  background-color: $color-grey-light;
   color: $color-text;
   font-size: $font-size-root;
   min-height: 100%;
@@ -28,4 +28,8 @@ body {
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.c-page {
+  background: $color-background;
 }

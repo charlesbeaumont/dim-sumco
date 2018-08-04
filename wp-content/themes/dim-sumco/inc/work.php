@@ -12,7 +12,7 @@
             <?php
             $entries = new WP_Query(array(
                 'post_type' => 'case',
-                'posts_per_page' => 9999
+                'posts_per_page' => 6
             ));
             ?>
 

@@ -90,11 +90,11 @@ let config = {
       fileName: path.resolve(__dirname, './manifest.json'),
       publicPath: ''
     }),
-    new WebpackMonitor({
-      capture: true,
-      // launch: true
-    }),
-    new BundleAnalyzerPlugin()
+    // new WebpackMonitor({
+    //   capture: true,
+    //   // launch: true
+    // }),
+    // new BundleAnalyzerPlugin()
   ],
   resolve: {
     modules: ['node_modules'],

@@ -2,18 +2,18 @@
 
 import '../css/styles.scss'
 
-import navigation from './modules/navigation'
-import time from './modules/time'
-import workGrid from './modules/work-grid'
+import { CSSPlugin, AttrPlugin } from 'gsap/all'
+
+import loader from './modules/loader'
 
 if (module.hot) {
   module.hot.accept()
 }
 
+const plugins = [CSSPlugin, AttrPlugin]
+
 const loadPage = () => {
-  navigation.init()
-  time.init()
-  workGrid.init()
+  loader.init()
 }
 
 document.addEventListener('DOMContentLoaded', loadPage)

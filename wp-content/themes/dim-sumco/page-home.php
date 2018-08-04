@@ -40,7 +40,7 @@ get_header(); ?>
         </div>
         <div class="o-section__content u-fill--grey">
             <div class="o-section__content-inner">
-                <h2 class="u-text-small u-margin-bottom-huge u-color--grey u-text-weight-regular">current situation in Amsterdam - <span data-time></span></h2>
+                <h2 class="u-text-small u-margin-bottom-huge u-color--grey u-text-weight-regular">current situation in Amsterdam - <span class="u-color--yellow" data-time></span></h2>
 
                 <p class="u-h2">working on: <span class="u-text-weight-regular">Consumer research for Nike.</span></p>
                 <p class="u-h2">listening to: <span class="u-text-weight-regular">Marvin Gaye - Motown Unreleased 1965.</span></p>

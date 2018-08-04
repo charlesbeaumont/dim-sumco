@@ -23,6 +23,7 @@
         "wpackagist-plugin/kraken-image-optimizer": "*",
         "wpackagist-plugin/multilingual-press": "*",
         "wpackagist-plugin/memcached-redux": "*",
+        "wpackagist-plugin/svg-support": "^2.3",
         "lillehummer/advanced-custom-fields-pro": "*",
         "lillehummer/wp-rocket": "*"
     },
