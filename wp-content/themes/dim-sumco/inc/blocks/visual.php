@@ -16,7 +16,7 @@
     </div>
 
     <div class="o-section__content">
-        <div class="o-section__content-inner">
+        <div class="o-section__content-inner" data-reveal>
             <?php $image = get_sub_field( 'visual' ); ?>
             <img src="<?php echo $image['sizes']['large']; ?>">
         </div>

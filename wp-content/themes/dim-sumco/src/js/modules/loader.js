@@ -1,14 +1,16 @@
 import mono from '../mono'
 
 import fonts from './fonts'
+import hero from './hero'
 import images from './images'
 import navigation from './navigation'
 import page from './page'
+import reveal from './reveal'
 import time from './time'
 import workGrid from './work-grid'
 
-const components = [navigation, page, time, workGrid]
-const animations = [page]
+const components = [hero, navigation, page, reveal, time, workGrid]
+const animations = [hero, page]
 
 const selectors = {
   page: '[data-page]'
@@ -33,8 +35,9 @@ const beforeLoading = () => {
     })
 
     setTimeout(() => {
+      navigation.close()
       resolve()
-    }, 1000)
+    }, 700)
   })
 }
 

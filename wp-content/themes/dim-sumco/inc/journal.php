@@ -5,7 +5,7 @@
     </div>
     <div class="o-section__content">
         <div class="o-section__content-inner -large">
-            <h2 class="u-text-small u-margin-top-large u-color--grey u-text-weight-regular">latest from our journal</h2>
+            <h2 class="u-text-small u-margin-top-large u-color--grey u-text-weight-regular" data-reveal>latest from our journal</h2>
         </div>
 
         <div class="c-post-grid">
@@ -17,7 +17,7 @@
             ?>
 
             <?php while ( $entries->have_posts() ) : $entries->the_post(); ?>
-            <div class="c-post-grid__entry">
+            <div class="c-post-grid__entry" data-reveal>
                 <?php if ( get_field( 'post_thumbnail_video' ) ) : ?>
                     <a href="<?php the_permalink(); ?>" class="c-post-grid__featured o-background-image">
                         <div class="c-post-grid__video-container" data-video>
@@ -29,7 +29,7 @@
                 <?php else : ?>
                     <a href="<?php the_permalink(); ?>" class="c-post-grid__featured o-background-image" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>');"></a>
                 <?php endif; ?>
-                <div class="c-post-grid__title">
+                <div class="c-post-grid__title rte">
                     <div class="u-color--yellow"><?php the_title(); ?></div>
                     <a href="<?php the_permalink(); ?>" class="u-text-weight-regular">Read more</a>
                 </div>

@@ -20,13 +20,13 @@ const prepare = () => {
 }
 
 const enter = () => {
-  TweenMax.to(elements.page, 1, {
+  TweenMax.to(elements.page, 0.7, {
     opacity: 1
   })
 }
 
 const exit = () => {
-  TweenMax.to(elements.page, 1, {
+  TweenMax.to(elements.page, 0.7, {
     opacity: 0
   })
 }

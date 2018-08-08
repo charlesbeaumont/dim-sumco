@@ -31,6 +31,14 @@ const toggleNavigation = () => {
   state.isActive = !state.isActive
 }
 
+const close = () => {
+  if (state.isActive) {
+    document.body.classList.remove('is-navigation-active')
+    state.isActive = false
+  }
+}
+
 export default {
-  init
+  init,
+  close
 }

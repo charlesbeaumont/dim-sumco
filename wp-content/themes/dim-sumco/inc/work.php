@@ -5,7 +5,7 @@
     </div>
     <div class="c-work-grid__wrapper o-section__content">
         <div class="c-work-grid__container o-section__content-inner -large">
-            <h2 class="u-text-small c-work-grid__heading u-color--grey u-text-weight-regular">work</h2>
+            <h2 class="u-text-small c-work-grid__heading u-color--grey u-text-weight-regular" data-reveal>work</h2>
         </div>
         <div class="c-work-grid" data-work-grid>
             <div class="c-work-grid__background o-background-image -contain" data-work-grid-background></div>
@@ -18,7 +18,7 @@
 
             <?php while ( $entries->have_posts() ) : $entries->the_post(); ?>
             <?php $image = get_field( 'case_background' ); ?>
-            <div class="c-work-grid__entry">
+            <div class="c-work-grid__entry" data-reveal>
                 <a href="<?php the_permalink(); ?>" class="c-work-grid__link" data-work-grid-thumbnail="<?php echo $image['sizes']['large']; ?>" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>');">
                 </a>
             </div>

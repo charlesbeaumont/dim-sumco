@@ -11,7 +11,7 @@ get_header(); ?>
 
 <main role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
 
-    <section class="c-hero o-section u-text-xlarge">
+    <section class="c-hero o-section u-text-xlarge" data-hero>
 
         <div class="o-section__border -white-logo u-fill--yellow u-color--white">
             <div class="o-section__border-inner">
@@ -20,10 +20,12 @@ get_header(); ?>
 
         <?php $image = get_field( 'case_background' ); ?>
         <?php if ( get_field( 'case_video' ) ) : ?>
-            <div class="o-section__content u-fill--grey o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');">
+            <div class="o-section__content u-fill--grey">
+                <div class="o-cover o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');" data-hero-background data-preload-image></div>
             </div>
         <?php else : ?>
-            <div class="o-section__content u-fill--grey o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');">
+            <div class="o-section__content u-fill--grey">
+                <div class="o-cover o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');" data-hero-background data-preload-image></div>
             </div>
         <?php endif; ?>
 

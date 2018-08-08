@@ -3,7 +3,7 @@
   position: fixed;
   top: $spacing-large + 3px;
   left: $spacing-large;
-  z-index: 300;
+  z-index: 400;
   opacity: 0;
 
   @include mq($until: tablet) {

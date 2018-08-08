@@ -17,14 +17,14 @@ get_header(); ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-    <section class="c-hero c-hero--home o-section u-text-large">
+    <section class="c-hero c-hero--home o-section u-text-large" data-hero>
 
         <div class="o-section__border u-fill--grey">
             <div class="o-section__border-inner">
             </div>
         </div>
         <div class="o-section__content u-fill--grey">
-            <div class="o-section__content-inner rte-hero rte-hero--home">
+            <div class="o-section__content-inner rte rte-hero rte-hero--home" data-hero-content>
                 <?php the_field( 'hero' ); ?>
             </div>
         </div>
@@ -40,12 +40,12 @@ get_header(); ?>
         </div>
         <div class="o-section__content u-fill--grey">
             <div class="o-section__content-inner">
-                <h2 class="u-text-small u-margin-bottom-huge u-color--grey u-text-weight-regular">current situation in Amsterdam - <span class="u-color--yellow" data-time></span></h2>
+                <h2 class="u-text-small u-margin-bottom-huge u-color--grey u-text-weight-regular" data-reveal>current situation in Amsterdam - <span class="u-color--yellow" data-time></span></h2>
 
-                <p class="u-h2">working on: <span class="u-text-weight-regular">Consumer research for Nike.</span></p>
-                <p class="u-h2">listening to: <span class="u-text-weight-regular">Marvin Gaye - Motown Unreleased 1965.</span></p>
-                <p class="u-h2">watching: <span class="u-text-weight-regular">Billions.</span></p>
-                <p class="u-h2">reading: <span class="u-text-weight-regular">Zadie Smith.</span></p>
+                <p class="u-h2" data-reveal>working on: <span class="u-text-weight-regular">Consumer research for Nike.</span></p>
+                <p class="u-h2" data-reveal>listening to: <span class="u-text-weight-regular">Marvin Gaye - Motown Unreleased 1965.</span></p>
+                <p class="u-h2" data-reveal>watching: <span class="u-text-weight-regular">Billions.</span></p>
+                <p class="u-h2" data-reveal>reading: <span class="u-text-weight-regular">Zadie Smith.</span></p>
             </div>
         </div>
 
