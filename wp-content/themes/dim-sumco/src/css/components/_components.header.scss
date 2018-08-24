@@ -16,6 +16,10 @@
   font-size: 1.5rem;
   color: $color-white;
   padding-top: 0.8rem;
+
+  .page & {
+    color: $color-grey;
+  }
 }
 
 .c-header__breadcrumb {

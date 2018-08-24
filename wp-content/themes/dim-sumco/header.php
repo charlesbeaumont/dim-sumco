@@ -74,16 +74,22 @@
             </div>
             <div class="o-section__content">
                 <div class="o-section__content-inner">
-                    <?php if ( is_singular( 'case' ) ) : ?>
                     <div class="c-header__breadcrumbs">
+                        <?php if ( is_page() ) : ?>
+                        <div class="c-header__breadcrumb">
+                            <?php the_title(); ?>
+                        </div>
+                        <?php endif; ?>
+                        <?php if ( is_singular( 'case' ) ) : ?>
                         <div class="c-header__breadcrumb">
                             Work
                         </div>
                         <div class="c-header__breadcrumb">
                             <?php the_title(); ?>
                         </div>
+                        <?php endif; ?>
                     </div>
-                    <?php endif; ?>
+
                 </div>
             </div>
 

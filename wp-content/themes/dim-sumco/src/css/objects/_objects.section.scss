@@ -145,6 +145,10 @@
     padding-left: $spacing-medium;
     padding-right: $spacing-medium;
   }
+
+  &.-flush {
+    padding: 0;
+  }
 }
 
 .o-section__content-inner {
