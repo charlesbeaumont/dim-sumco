@@ -48,6 +48,12 @@ const replaceContent = body => {
       document.querySelector(selector).replaceWith(body.querySelector(selector))
     })
 
+    if (process.env.NODE_ENV === 'development') {
+      Array.from(document.querySelectorAll('body a[href*="dim-sumco.test"]')).forEach(el => {
+        el.setAttribute('href', el.getAttribute('href').replace('dim-sumco.test', 'localhost:3000'))
+      })
+    }
+
     load()
 
     resolve()
