@@ -20,8 +20,10 @@ get_header(); ?>
 
         <?php $image = get_field( 'case_background' ); ?>
         <?php if ( get_field( 'case_video' ) ) : ?>
-            <div class="o-section__content u-fill--grey">
-                <div class="o-cover o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');" data-hero-background data-preload-image></div>
+            <div class="o-section__content -flush u-fill--grey">
+                <video class="o-video c-post-grid__video" autoplay playsinline muted loop data-hero-background data-video>
+                    <source src="<?php the_field( 'case_video' ); ?>" type="video/mp4">
+                </video>
             </div>
         <?php else : ?>
             <div class="o-section__content u-fill--grey">

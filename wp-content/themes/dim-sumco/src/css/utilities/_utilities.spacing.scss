@@ -57,4 +57,10 @@ $spacing-sizes: (
 
 }
 
+.u-margin-top-large\@mobile {
+  @include mq($until: tablet) {
+    margin-top: $spacing-large;
+  }
+}
+
 /* stylelint-enable string-quotes */

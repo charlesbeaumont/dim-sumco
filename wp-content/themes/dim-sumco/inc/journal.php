@@ -5,7 +5,7 @@
     </div>
     <div class="o-section__content">
         <div class="o-section__content-inner -large">
-            <h2 class="u-text-small u-margin-top-large u-color--grey u-text-weight-regular" data-reveal>latest from our journal</h2>
+            <h2 class="o-section__title u-text-small u-margin-top-large@mobile u-color--grey u-text-weight-regular" data-reveal>latest from our journal</h2>
         </div>
 
         <div class="c-post-grid">

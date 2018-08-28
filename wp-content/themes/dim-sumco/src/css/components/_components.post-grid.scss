@@ -5,8 +5,10 @@
   flex-wrap: wrap;
   width: calc(100% + 16rem);
   margin-left: -8rem;
+  padding-top: $spacing-huge;
 
   @include mq($until: tablet) {
+    padding-top: 0;
     width: calc(100% + #{$spacing-medium * 2});
     margin-left: -$spacing-medium;
   }

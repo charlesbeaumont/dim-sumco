@@ -4,9 +4,7 @@
         <div class="o-section__border-inner"></div>
     </div>
     <div class="c-work-grid__wrapper o-section__content">
-        <div class="c-work-grid__container o-section__content-inner -large">
-            <h2 class="u-text-small c-work-grid__heading u-color--grey u-text-weight-regular" data-reveal>work</h2>
-        </div>
+        <h2 class="o-section__title u-text-small u-color--grey u-text-weight-regular" data-reveal>work</h2>
         <div class="c-work-grid" data-work-grid>
             <div class="c-work-grid__background o-background-image -contain" data-work-grid-background></div>
             <?php

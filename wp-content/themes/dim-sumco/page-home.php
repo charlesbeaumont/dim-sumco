@@ -40,12 +40,24 @@ get_header(); ?>
         </div>
         <div class="o-section__content u-fill--grey">
             <div class="o-section__content-inner">
-                <h2 class="u-text-small u-margin-bottom-huge u-color--grey u-text-weight-regular" data-reveal>current situation in Amsterdam - <span class="u-color--yellow" data-time></span></h2>
+                <h2 class="o-section__title u-text-small u-margin-bottom-huge u-color--grey u-text-weight-regular" data-reveal>current situation in Amsterdam - <span class="u-color--yellow" data-time></span></h2>
 
-                <p class="u-h2" data-reveal>working on: <span class="u-text-weight-regular">Consumer research for Nike.</span></p>
-                <p class="u-h2" data-reveal>listening to: <span class="u-text-weight-regular">Marvin Gaye - Motown Unreleased 1965.</span></p>
-                <p class="u-h2" data-reveal>watching: <span class="u-text-weight-regular">Billions.</span></p>
-                <p class="u-h2" data-reveal>reading: <span class="u-text-weight-regular">Zadie Smith.</span></p>
+                <div class="u-h2" data-reveal>
+                    working on:
+                    <div class="c-current__content" style="display: inline-block;"><?php the_field( 'working_on' ); ?></div>
+                </div>
+                <div class="u-h2" data-reveal>
+                    listening to:
+                    <div class="c-current__content" style="display: inline-block;"><?php the_field( 'listening_to' ); ?></div>
+                </div>
+                <div class="u-h2" data-reveal>
+                    watching:
+                    <div class="c-current__content" style="display: inline-block;"><?php the_field( 'watching' ); ?></div>
+                </div>
+                <div class="u-h2" data-reveal>
+                    reading:
+                    <div class="c-current__content" style="display: inline-block;"><?php the_field( 'reading' ); ?></div>
+                </div>
             </div>
         </div>
 

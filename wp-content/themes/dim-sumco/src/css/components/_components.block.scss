@@ -5,3 +5,26 @@
     height: auto;
   }
 }
+
+.c-block__columns {
+  display: flex;
+  width: 100%;
+}
+
+.c-block__column {
+  flex: 1;
+  padding: $spacing-xlarge 4.5rem;
+
+  &.-light-grey {
+    background: rgba($color-grey-light, 0.3);
+  }
+
+  &.-grey {
+    background: $color-grey-light;
+  }
+}
+
+.c-block__column-inner {
+  width: 100%;
+  max-width: 50rem;
+}

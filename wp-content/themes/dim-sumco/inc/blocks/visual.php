@@ -11,7 +11,7 @@
 
 <section class="c-block c-block--visual o-section -spacing-xlarge">
 
-	<div class="o-section__border">
+	<div class="o-section__border <?php if ( get_sub_field( 'color' ) == 'yellow-grey' || get_sub_field( 'color' ) == 'yellow-white') : ?>-white-logo<?php endif; ?>">
 
     </div>
 

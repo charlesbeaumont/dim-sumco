@@ -75,7 +75,7 @@
             <div class="o-section__content">
                 <div class="o-section__content-inner">
                     <div class="c-header__breadcrumbs">
-                        <?php if ( is_page() ) : ?>
+                        <?php if ( is_page() && !is_front_page() ) : ?>
                         <div class="c-header__breadcrumb">
                             <?php the_title(); ?>
                         </div>

@@ -1,0 +1,9 @@
+
+.c-current__content {
+  display: inline-block;
+
+  p {
+    @include text-h2;
+    font-weight: 300;
+  }
+}
