@@ -2,6 +2,18 @@
 .c-hero {
   min-height: 100vh;
   min-height: calc(100vh - 10rem);
+  position: relative;
+}
+
+.c-hero__back {
+  position: absolute;
+  bottom: $spacing-large;
+  right: $spacing-large;
+  background: url('/wp-content/themes/dim-sumco/img/arrow-left.png') center center no-repeat;
+  width: 6.9rem;
+  height: 1.9rem;
+  background-size: 100% 100%;
+  z-index: 300;
 }
 
 .rte-hero {

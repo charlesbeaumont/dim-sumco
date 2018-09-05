@@ -9,6 +9,10 @@
 .c-block__columns {
   display: flex;
   width: 100%;
+
+  @include mq($until: tablet) {
+    flex-direction: column;
+  }
 }
 
 .c-block__column {

@@ -5,6 +5,10 @@
   left: 0;
   width: 100%;
   z-index: 300;
+
+  @include mq($until: tablet) {
+    top: 2rem;
+  }
 }
 
 .c-header__inner {
@@ -17,7 +21,8 @@
   color: $color-white;
   padding-top: 0.8rem;
 
-  .page & {
+  .page &,
+  .single & {
     color: $color-grey;
   }
 }
@@ -26,7 +31,23 @@
   margin-right: $spacing-xlarge;
   text-transform: lowercase;
 
+  @include mq($until: tablet) {
+    margin-right: $spacing-large;
+  }
+
   &:last-child {
     margin-right: 0;
+  }
+
+  a {
+    &,
+    &:link,
+    &:hover,
+    &:visited,
+    &:focus,
+    &:active {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 }

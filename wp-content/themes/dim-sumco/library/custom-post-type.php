@@ -68,9 +68,9 @@ function hummer_custom_post_types() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 		'show_in_rest' 			=> false,
-		'rest_base' 			=> 'case',
-		'rewrite'				=> array( 'slug' => 'case', 'with_front' => false ),
-		'has_archive' 			=> 'case',
+		'rest_base' 			=> 'cases',
+		'rewrite'				=> array( 'slug' => 'cases', 'with_front' => false ),
+		'has_archive' 			=> 'cases',
 		'menu_icon' 			=> 'dashicons-lightbulb',
 	);
 	register_post_type( 'case', $args );

@@ -9,40 +9,25 @@
 
 get_header(); ?>
 
-<div class="content">
+<section class="o-section -spacing-xlarge -fill-height">
 
-	<main class="main archive clearfix" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-
-		<h1 class="archive__title"><?php post_type_archive_title(); ?></h1>
-
-		<?php while ( have_posts() ) : the_post(); ?>
-
-		<article <?php post_class( 'article-entry clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
-			<header class="article-entry__header">
-				<h3 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-
-				<p class="entry-meta">
-					<?php printf( __( 'Posted %1$s by %2$s', 'dim-sumco' ),
-						'<time class="updated entry-time" datetime="' . get_the_time( 'Y-m-d' ) . '" itemprop="datePublished">' . get_the_time( get_option( 'date_format' ) ) . '</time>',
-						'<span class="by">by</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>'
-					); ?>
-				</p>
-			</header>
-
-			<section class="article-entry__content clearfix">
-				<?php the_post_thumbnail(); ?>
-				<?php the_excerpt(); ?>
-			</section>
-
-		</article>
-
-		<?php endwhile; ?>
-
-		<?php the_posts_pagination(); ?>
-
-	</main>
-
+<div class="o-section__border -white-logo u-fill--yellow">
+    <div class="o-section__border-inner"></div>
 </div>
+<div class="c-work-grid__wrapper o-section__content">
+    <h2 class="o-section__title u-text-small u-color--grey u-text-weight-regular" data-reveal>work</h2>
+    <div class="c-work-grid" data-work-grid>
+        <div class="c-work-grid__background o-background-image -contain" data-work-grid-background></div>
+        <?php while ( have_posts() ) : the_post(); ?>
+        <?php $image = get_field( 'case_background' ); ?>
+        <div class="c-work-grid__entry" data-reveal>
+            <a href="<?php the_permalink(); ?>" class="c-work-grid__link" data-work-grid-thumbnail="<?php echo $image['sizes']['large']; ?>" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>');">
+            </a>
+        </div>
+        <?php endwhile; ?>
+    </div>
+</div>
+
+</section>
 
 <?php get_footer();
