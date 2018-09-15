@@ -1,0 +1,98 @@
+.c-hamburger {
+  position: fixed;
+  right: 4.5rem;
+  top: 3rem;
+  padding: 10px 14px;
+  width: 4.4rem;
+  height: 4.4rem;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  border: 0;
+  margin: 0;
+  overflow: hidden;
+  background: none;
+  z-index: 600;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include mq($until: tablet) {
+    top: 0.4rem;
+    right: 0.4rem;
+  }
+}
+
+.c-hamburger__box {
+  width: 16px;
+  height: 11px;
+  display: inline-block;
+  position: relative;
+}
+
+.c-hamburger__inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.c-hamburger__inner,
+.c-hamburger__inner::before,
+.c-hamburger__inner::after {
+  width: 16px;
+  height: 2px;
+  background-color: $color-grey;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+  will-change: transform;
+}
+
+.c-hamburger__inner::before,
+.c-hamburger__inner::after {
+  content: "";
+  display: block;
+}
+
+.c-hamburger__inner {
+  top: 1px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  .c-hamburger:hover & {
+    top: 1px;
+  }
+
+  .is-navigation-active & {
+    transform: translate3d(0, 5px, 0) rotate(135deg);
+    transition-delay: 0.075s;
+  }
+
+  &::before {
+    top: 5px;
+    transition: opacity 0.125s 0.275s ease;
+
+    .c-hamburger:hover & {
+      top: 5px;
+    }
+
+    .is-navigation-active & {
+      transition-delay: 0s;
+      opacity: 0;
+    }
+  }
+
+  &::after {
+    top: 10px;
+    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    .is-navigation-active & {
+      transform: translate3d(0, -10px, 0) rotate(-270deg);
+      transition-delay: 0.075s;
+    }
+  }
+}

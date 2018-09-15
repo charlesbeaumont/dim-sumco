@@ -17,7 +17,7 @@
 
 .c-block__column {
   flex: 1;
-  padding: $spacing-xlarge 4.5rem;
+  padding: $spacing-large 4.5rem;
 
   &.-light-grey {
     background: rgba($color-grey-light, 0.3);
@@ -31,4 +31,12 @@
 .c-block__column-inner {
   width: 100%;
   max-width: 50rem;
+}
+
+.c-block__credits {
+  position: absolute;
+  bottom: $spacing-medium;
+  left: 4.5rem;
+  font-size: $font-size-small;
+  color: $color-white;
 }

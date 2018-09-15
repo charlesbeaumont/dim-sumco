@@ -31,8 +31,6 @@ get_header(); ?>
             </div>
         <?php endif; ?>
 
-        <a href="<?php echo get_post_type_archive_link( 'case' ); ?>" class="c-hero__back"></a>
-
     </section>
 
     <?php while ( have_posts() ) : the_post(); ?>

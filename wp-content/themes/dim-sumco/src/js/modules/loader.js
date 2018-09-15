@@ -10,13 +10,14 @@ import time from './time'
 import workGrid from './work-grid'
 
 const components = [hero, navigation, page, reveal, time, workGrid]
-const animations = [hero, page]
+const animations = [hero, page, navigation]
 
 const selectors = {
-  page: '[data-page]'
+  page: '[data-page]',
+  navigation: '[data-navigation]'
 }
 
-const replacableElements = [selectors.page]
+const replacableElements = [selectors.page, selectors.navigation]
 
 const init = () => {
   mono.start({

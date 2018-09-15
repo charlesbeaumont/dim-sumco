@@ -11,58 +11,24 @@
   left: 0;
   width: 100%;
   z-index: 400;
-  display: none;
 
   @include mq($until: tablet) {
     display: block;
   }
 }
 
-.c-navigation__background {
-  position: absolute;
+.c-navigation__topbar {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 5rem;
   background: $color-white;
-  z-index: 100;
-}
+  z-index: 400;
+  display: none;
 
-.c-navigation__topbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-left: $spacing-medium * 2;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 300;
-}
-
-.c-navigation__logo {
-  width: 10rem;
-  height: auto;
-
-  svg {
+  @include mq($until: tablet) {
     display: block;
-    margin: 0;
-  }
-}
-
-.c-navigation__hamburger {
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  svg {
-    display: block;
-    margin: 0;
-    width: 1.8rem;
-    height: auto;
   }
 }
 
@@ -73,7 +39,6 @@
   width: 100%;
   height: 100vh;
   padding: $spacing-large $spacing-medium;
-  border-left: $spacing-medium solid $color-yellow;
   background: $color-grey-light;
   z-index: 200;
   display: flex;
@@ -81,7 +46,18 @@
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.4s ease-out;
+  transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
+  background: url('/wp-content/themes/dim-sumco/img/logo-dim-sum-grey.svg') 3.2rem 3.9rem no-repeat, url('/wp-content/themes/dim-sumco/img/text-contact-grey.svg') 3.2rem calc(100% - 3.4rem) no-repeat;
+  background-size: 11.8rem auto, 13.5rem auto;
+  background-attachment: fixed, fixed;
+  background-color: $color-grey-light;
+  padding-left: 3.2rem;
+
+  @include mq($until: tablet) {
+    background: url('/wp-content/themes/dim-sumco/img/text-contact-grey.svg') 1.6rem calc(100% - 3.4rem) no-repeat;
+    background-size: 13.5rem auto;
+    background-color: $color-grey-light;
+  }
 
   .is-navigation-active & {
     opacity: 1;
@@ -91,9 +67,24 @@
   .menu {
     margin-top: auto;
     margin-bottom: auto;
+    padding-left: 20%;
+
+    @include mq($until: tablet) {
+      padding-left: 0;
+    }
+
+    li {
+      margin: 1rem 0;
+    }
 
     a {
-      font-size: 3.2rem;
+      font-size: 4rem;
+      font-weight: 500;
+      position: relative;
+
+      @include mq($until: tablet) {
+        font-size: 3.2rem;
+      }
 
       &,
       &:link,
@@ -102,7 +93,23 @@
       &:focus,
       &:visited {
         text-decoration: none;
-        color: $color-yellow;
+        color: $color-grey;
+      }
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.2rem;
+        content: '';
+        background-color: $color-grey;
+      }
+    }
+
+    .current-menu-item a {
+      &::after {
+        background-color: $color-yellow;
       }
     }
   }

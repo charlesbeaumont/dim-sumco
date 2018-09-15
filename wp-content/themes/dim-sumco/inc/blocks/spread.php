@@ -18,6 +18,7 @@
     <?php $image = get_sub_field( 'spread' ); ?>
     <div class="o-section__content -flush" data-reveal>
         <img src="<?php echo $image['sizes']['large']; ?>">
+        <div class="c-block__credits"><?php the_sub_field( 'credits' ); ?></div>
     </div>
 
 </section>

@@ -6,7 +6,26 @@
 ////
 
 .c-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: $font-size-small;
+  width: 100%;
 
+  @include mq($until: tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.c-footer__content {
+  @include mq($until: tablet) {
+    margin-bottom: $spacing-medium;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .c-footer__copyright {

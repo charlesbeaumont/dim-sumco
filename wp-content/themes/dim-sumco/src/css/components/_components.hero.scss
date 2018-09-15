@@ -5,17 +5,6 @@
   position: relative;
 }
 
-.c-hero__back {
-  position: absolute;
-  bottom: $spacing-large;
-  right: $spacing-large;
-  background: url('/wp-content/themes/dim-sumco/img/arrow-left.png') center center no-repeat;
-  width: 6.9rem;
-  height: 1.9rem;
-  background-size: 100% 100%;
-  z-index: 300;
-}
-
 .rte-hero {
   width: 70rem;
   max-width: 100%;

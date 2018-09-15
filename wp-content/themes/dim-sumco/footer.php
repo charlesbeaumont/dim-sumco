@@ -14,7 +14,12 @@
 
         </div>
         <div class="o-section__content u-fill--grey">
-            <p class="c-footer__copyright">&copy;2018 dim-sum All right reserved.</p>
+            <div class="c-footer">
+                <div class="c-footer__content">
+                    <?php the_field( 'footer', 'option' ); ?>
+                </div>
+                <p class="c-footer__copyright">&copy;2018 dim-sum All right reserved.</p>
+            </div>
         </div>
     </div>
 

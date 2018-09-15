@@ -26,9 +26,16 @@ const enter = () => {
 }
 
 const exit = () => {
-  TweenMax.to(elements.page, 0.7, {
-    opacity: 0
-  })
+  if (document.body.classList.contains('is-navigation-active')) {
+    TweenMax.set(elements.page, {
+      opacity: 0
+    })
+  } else {
+    TweenMax.to(elements.page, 0.7, {
+      opacity: 0
+    })
+  }
+
 }
 
 export default {

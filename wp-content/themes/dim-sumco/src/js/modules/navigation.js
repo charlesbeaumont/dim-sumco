@@ -1,3 +1,4 @@
+import { TweenMax } from 'gsap/all'
 
 const selectors = {
   toggle: '[data-navigation-toggle]',
@@ -38,7 +39,24 @@ const close = () => {
   }
 }
 
+const prepare = () => {
+
+}
+
+const enter = () => {
+
+}
+
+const exit = () => {
+  TweenMax.to(elements.wrapper, 0.7, {
+    opacity: 0
+  })
+}
+
 export default {
   init,
-  close
+  close,
+  prepare,
+  enter,
+  exit
 }
