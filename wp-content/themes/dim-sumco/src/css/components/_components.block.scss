@@ -19,6 +19,11 @@
   flex: 1;
   padding: $spacing-large 4.5rem;
 
+  @include mq($until: tablet) {
+    padding-left: $spacing-medium;
+    padding-right: $spacing-medium;
+  }
+
   &.-light-grey {
     background: rgba($color-grey-light, 0.3);
   }

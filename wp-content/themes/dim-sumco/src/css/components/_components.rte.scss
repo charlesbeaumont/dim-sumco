@@ -1,4 +1,8 @@
 .rte {
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
   a {
     position: relative;
 

@@ -63,10 +63,11 @@
   padding-bottom: 50%;
   transition: opacity 0.3s ease-out;
   display: block;
-  background-size: auto 60%;
+  background-size: auto 75%;
   background-position: center center;
 
   @include mq($until: tablet) {
+    background-size: auto 100%;
     padding: $spacing-large 1rem;
     height: 12rem;
   }

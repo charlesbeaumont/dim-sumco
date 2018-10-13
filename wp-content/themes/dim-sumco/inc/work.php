@@ -17,7 +17,7 @@
             <?php while ( $entries->have_posts() ) : $entries->the_post(); ?>
             <?php $image = get_field( 'case_background' ); ?>
             <div class="c-work-grid__entry" data-reveal>
-                <a href="<?php the_permalink(); ?>" class="c-work-grid__link" data-work-grid-thumbnail="<?php echo $image['sizes']['large']; ?>" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>');">
+                <a href="<?php the_permalink(); ?>" class="c-work-grid__link" data-work-grid-thumbnail="<?php echo $image['sizes']['medium']; ?>" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>');">
                 </a>
             </div>
             <?php endwhile; wp_reset_postdata(); ?>

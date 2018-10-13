@@ -3,10 +3,14 @@
   min-height: 100vh;
   min-height: calc(100vh - 10rem);
   position: relative;
+
+  @include mq($until: tablet) {
+    margin-top: 5rem;
+  }
 }
 
 .rte-hero {
-  width: 70rem;
+  width: 85rem;
   max-width: 100%;
 
   h1,

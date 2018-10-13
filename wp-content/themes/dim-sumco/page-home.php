@@ -19,7 +19,7 @@ get_header(); ?>
 
     <section class="c-hero c-hero--home o-section u-text-large" data-hero>
 
-        <div class="o-section__border u-fill--grey">
+        <div class="o-section__border u-fill--white">
             <div class="o-section__border-inner">
             </div>
         </div>
@@ -39,7 +39,7 @@ get_header(); ?>
             <div class="o-section__border-inner"></div>
         </div>
         <div class="o-section__content u-fill--grey">
-            <div class="o-section__content-inner">
+            <div class="o-section__content-inner rte">
                 <h2 class="o-section__title u-text-small u-margin-bottom-huge u-color--grey u-text-weight-regular" data-reveal>current situation in Amsterdam - <span class="u-color--yellow" data-time></span></h2>
 
                 <div class="u-h2" data-reveal>
