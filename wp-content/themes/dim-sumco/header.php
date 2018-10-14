@@ -77,7 +77,7 @@
                         <?php endif; ?>
                         <?php if ( is_singular( 'case' ) ) : ?>
                         <div class="c-header__breadcrumb">
-                            <a href="<?php echo get_post_type_archive_link( 'case' ); ?>">Work</a>
+                            <a href="<?php echo home_url(); ?>/work">Work</a>
                         </div>
                         <div class="c-header__breadcrumb">
                             <?php the_title(); ?>

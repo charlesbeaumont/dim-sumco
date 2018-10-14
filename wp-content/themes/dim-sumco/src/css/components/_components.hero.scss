@@ -33,6 +33,16 @@
   }
 }
 
+.rte-hero--white {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $color-white;
+  }
+}
+
 .rte-hero--home {
   h1,
   h2,

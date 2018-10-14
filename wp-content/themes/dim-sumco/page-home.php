@@ -28,7 +28,7 @@ get_header(); ?>
                 <?php $image = get_field( 'hero_background' ); ?>
                 <div class="o-section__background o-cover o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');" data-hero-background data-preload-image></div>
             <?php endif; ?>
-            <div class="o-section__content-inner rte rte-hero rte-hero--home" data-hero-content>
+            <div class="o-section__content-inner -relative rte rte-hero rte-hero--home" data-hero-content>
                 <?php the_field( 'hero' ); ?>
             </div>
         </div>
