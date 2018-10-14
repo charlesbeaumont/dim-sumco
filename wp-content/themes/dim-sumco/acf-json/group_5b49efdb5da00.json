@@ -41,6 +41,25 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_5bc2f86849549",
+            "label": "Header",
+            "name": "case_header",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -62,5 +81,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1531572697
+    "modified": 1539504860
 }

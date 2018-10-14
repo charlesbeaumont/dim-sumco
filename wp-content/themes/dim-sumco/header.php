@@ -37,7 +37,7 @@
 
     <div class="c-contact">
         <a href="mailto:hello@dim-sum.co">hello@dim-sum.co</a><br>
-        <a href="tel:00312044305533">+31 (0)20 44 30 55 33</a>
+        <a href="tel:0031202101789">+31 (0)20 21 01 789</a>
     </div>
 
     <button class="c-hamburger" type="button" data-navigation-toggle></button>

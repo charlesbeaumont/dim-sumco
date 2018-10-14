@@ -27,7 +27,13 @@ get_header(); ?>
             </div>
         <?php else : ?>
             <div class="o-section__content u-fill--grey">
-                <div class="o-cover o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');" data-hero-background data-preload-image></div>
+                <div class="o-section__background o-cover o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');" data-hero-background data-preload-image></div>
+
+                <?php if ( get_field( 'case_header') ) : ?>
+                    <div class="o-section__content-inner rte rte-hero rte-hero--home" data-hero-content>
+                        <?php the_field( 'case_header' ); ?>
+                    </div>
+                <?php endif; ?>
             </div>
         <?php endif; ?>
 

@@ -24,6 +24,10 @@ get_header(); ?>
             </div>
         </div>
         <div class="o-section__content u-fill--grey">
+            <?php if ( get_field( 'hero_background') ) : ?>
+                <?php $image = get_field( 'hero_background' ); ?>
+                <div class="o-section__background o-cover o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');" data-hero-background data-preload-image></div>
+            <?php endif; ?>
             <div class="o-section__content-inner rte rte-hero rte-hero--home" data-hero-content>
                 <?php the_field( 'hero' ); ?>
             </div>
@@ -40,7 +44,7 @@ get_header(); ?>
         </div>
         <div class="o-section__content u-fill--grey">
             <div class="o-section__content-inner rte">
-                <h2 class="o-section__title u-text-small u-margin-bottom-huge u-color--grey u-text-weight-regular" data-reveal>current situation in Amsterdam - <span class="u-color--yellow" data-time></span></h2>
+                <h2 class="o-section__title u-text-small u-margin-bottom-huge u-color--grey u-text-weight-regular" data-reveal>currently in Amsterdam - <span class="u-color--yellow" data-time></span></h2>
 
                 <div class="u-h2" data-reveal>
                     working on:
