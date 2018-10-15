@@ -55,6 +55,10 @@ const replaceContent = body => {
       })
     }
 
+    if ('gtag' in window) {
+      gtag('config', 'UA-127499371-1', location.pathname + location.search + location.hash)
+    }
+
     load()
 
     resolve()

@@ -26,6 +26,16 @@
 	<link rel="icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/img/favicon.png" sizes="32x32" type="image/png">
 
 	<?php wp_head(); ?>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127499371-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127499371-1');
+    </script>
 </head>
 
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
@@ -71,14 +81,6 @@
                 <div class="o-section__content-inner">
                     <div class="c-header__breadcrumbs">
                         <?php if ( is_page() && !is_front_page() ) : ?>
-                        <div class="c-header__breadcrumb">
-                            <?php the_title(); ?>
-                        </div>
-                        <?php endif; ?>
-                        <?php if ( is_singular( 'case' ) ) : ?>
-                        <div class="c-header__breadcrumb">
-                            <a href="<?php echo home_url(); ?>/work">Work</a>
-                        </div>
                         <div class="c-header__breadcrumb">
                             <?php the_title(); ?>
                         </div>
