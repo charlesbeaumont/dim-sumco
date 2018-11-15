@@ -30,7 +30,7 @@ get_header(); ?>
                 <div class="o-section__background o-cover o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');" data-hero-background data-preload-image></div>
 
                 <?php if ( get_field( 'case_header') ) : ?>
-                    <div class="o-section__content-inner -relative rte rte-hero rte-hero--white" data-hero-content>
+                    <div class="o-section__content-inner -relative rte rte-hero rte-hero--case rte-hero--white" data-hero-content>
                         <?php the_field( 'case_header' ); ?>
                     </div>
                 <?php endif; ?>

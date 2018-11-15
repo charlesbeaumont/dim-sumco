@@ -68,36 +68,3 @@
 </div>
 
 <div class="c-page" data-page>
-
-    <header class="c-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-
-        <section class="o-section u-text-xlarge">
-
-            <div class="o-section__border -no-logo -center">
-                <div class="o-section__border-inner">
-                </div>
-            </div>
-            <div class="o-section__content">
-                <div class="o-section__content-inner">
-                    <div class="c-header__breadcrumbs">
-                        <?php if ( is_page() && !is_front_page() ) : ?>
-                        <div class="c-header__breadcrumb">
-                            <?php the_title(); ?>
-                        </div>
-                        <?php endif; ?>
-                        <?php if ( is_singular( 'post' ) ) : ?>
-                        <div class="c-header__breadcrumb">
-                            <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">Journal</a>
-                        </div>
-                        <div class="c-header__breadcrumb">
-                            <?php the_title(); ?>
-                        </div>
-                        <?php endif; ?>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-
-	</header>
