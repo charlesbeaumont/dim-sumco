@@ -6,6 +6,8 @@ const selectors = {
 
 let elements
 
+let timer
+
 const init = () => {
   elements = {
     container: document.querySelector(selectors.container)
@@ -14,7 +16,11 @@ const init = () => {
   if (!elements.container) return
 
   setTime()
-  setInterval(setTime, 1000)
+  timer = setInterval(setTime, 1000)
+}
+
+const exit = () => {
+  clearInterval(timer)
 }
 
 const setTime = () => {

@@ -26,7 +26,9 @@ get_header(); ?>
         <div class="o-section__content u-fill--grey">
             <?php if ( get_field( 'hero_background') ) : ?>
                 <?php $image = get_field( 'hero_background' ); ?>
-                <div class="o-section__background o-cover o-background-image" style="background-image: url('<?php echo $image['sizes']['large']; ?>');" data-hero-background data-preload-image></div>
+                <div class="o-section__background o-cover o-background-image u-hide@mobile" style="background-image: url('<?php echo $image['sizes']['large']; ?>');" data-hero-background data-preload-image></div>
+                <?php $image = get_field( 'hero_background_mobile' ); ?>
+                <div class="o-section__background o-cover o-background-image u-hide@desktop" style="background-image: url('<?php echo $image['sizes']['large']; ?>');" data-hero-background data-preload-image></div>
             <?php endif; ?>
             <div class="o-section__content-inner -relative rte rte-hero rte-hero--home" data-hero-content>
                 <?php the_field( 'hero' ); ?>

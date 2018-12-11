@@ -54,9 +54,10 @@
   padding-left: 3.2rem;
 
   @include mq($until: tablet) {
-    background: url('/wp-content/themes/dim-sumco/img/text-contact-grey.svg') 1.6rem calc(100% - 3.4rem) no-repeat;
+    background: url('/wp-content/themes/dim-sumco/img/text-contact-grey.svg') 1.6rem calc(100% - 8.4rem) no-repeat;
     background-size: 13.5rem auto;
     background-color: $color-grey-light;
+    padding: $spacing-large $spacing-medium 8.2rem;
   }
 
   .is-navigation-active & {

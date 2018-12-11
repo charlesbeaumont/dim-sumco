@@ -23,6 +23,7 @@
   @include mq($until: tablet) {
     width: 23.5rem;
     font-size: 2rem;
+    padding: 0;
   }
 
   &:focus {
@@ -43,24 +44,5 @@
 
   &:-moz-placeholder {
     color: $color-white;
-  }
-}
-
-.c-newsletter__submit {
-  background: none;
-  border: none;
-  font-weight: 500;
-  font-size: 2.5rem;
-  font-family: $font-family-body;
-  color: $color-white;
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
-
-  @include mq($until: tablet) {
-    font-size: 2rem;
-    padding: 0;
   }
 }

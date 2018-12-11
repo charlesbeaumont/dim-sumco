@@ -16,7 +16,7 @@
 }
 
 .u-hide\@desktop {
-    @include mq($from: desktop) {
+    @include mq($from: tablet) {
         display: none;
     }
 }

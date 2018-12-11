@@ -36,6 +36,10 @@
 .rte-hero--case {
   h1 {
     font-size: 7rem;
+
+    @include mq($until: tablet) {
+      font-size: 4rem;
+    }
   }
 }
 
