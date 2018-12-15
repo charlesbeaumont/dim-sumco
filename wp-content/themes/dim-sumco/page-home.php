@@ -49,19 +49,19 @@ get_header(); ?>
                 <h2 class="o-section__title u-text-small u-margin-bottom-huge u-color--grey u-text-weight-regular" data-reveal>currently in Amsterdam - <span class="u-color--yellow" data-time></span></h2>
 
                 <div class="u-h2" data-reveal>
-                    working on:
+                    Working on:
                     <div class="c-current__content" style="display: inline-block;"><?php the_field( 'working_on' ); ?></div>
                 </div>
                 <div class="u-h2" data-reveal>
-                    listening to:
+                    Listening to:
                     <div class="c-current__content" style="display: inline-block;"><?php the_field( 'listening_to' ); ?></div>
                 </div>
                 <div class="u-h2" data-reveal>
-                    watching:
+                    Watching:
                     <div class="c-current__content" style="display: inline-block;"><?php the_field( 'watching' ); ?></div>
                 </div>
                 <div class="u-h2" data-reveal>
-                    reading:
+                    Reading:
                     <div class="c-current__content" style="display: inline-block;"><?php the_field( 'reading' ); ?></div>
                 </div>
             </div>

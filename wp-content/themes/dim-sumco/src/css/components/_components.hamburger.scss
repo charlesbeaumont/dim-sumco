@@ -17,11 +17,11 @@
   &::after {
     @include cover;
     content: '';
-    background: $color-grey;
+    background: $color-yellow;
     transition: all 0.6s ease-out;
 
     .is-navigation-active & {
-      background: $color-yellow;
+      background: $color-grey;
     }
   }
 

@@ -39,7 +39,6 @@
   width: 100%;
   height: 100vh;
   padding: $spacing-large $spacing-medium;
-  background: $color-grey-light;
   z-index: 200;
   display: flex;
   flex-direction: column;
@@ -48,14 +47,13 @@
   visibility: hidden;
   transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
   background: url('/wp-content/themes/dim-sumco/img/logo-dim-sum-grey.svg') 3.2rem 3.9rem no-repeat, url('/wp-content/themes/dim-sumco/img/text-contact-grey.svg') 3.2rem calc(100% - 3.4rem) no-repeat;
-  background-size: 11.8rem auto, 13.5rem auto;
+  background-size: 11.8rem auto, 11.8rem auto;
   background-attachment: fixed, fixed;
   background-color: $color-grey-light;
   padding-left: 3.2rem;
 
   @include mq($until: tablet) {
-    background: url('/wp-content/themes/dim-sumco/img/text-contact-grey.svg') 1.6rem calc(100% - 8.4rem) no-repeat;
-    background-size: 13.5rem auto;
+    background: none;
     background-color: $color-grey-light;
     padding: $spacing-large $spacing-medium 8.2rem;
   }
@@ -105,13 +103,13 @@
         width: 100%;
         bottom: -2px;
         left: 0;
-        background: $color-grey;
+        background: $color-yellow;
         transition: all 0.3s ease-out;
       }
 
       &::after {
         transform-origin: left center;
-        background: $color-yellow;
+        background: $color-grey;
         transform: scaleX(0);
       }
 

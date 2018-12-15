@@ -9,9 +9,9 @@
                 <p class="u-margin-none">
                     Subscribe to our newsletter by
                     <input class="c-newsletter__input" type="email" placeholder="entering your email here" name="EMAIL">
+                    <button class="c-newsletter__submit" type="submit" value="subscribe"/>Go</button>
                 </p>
                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <button class="c-newsletter__submit" type="submit" value="subscribe"/></button>
                     <input type="text" name="b_fae074764163adfd55b7a0e69_a5fb9a7c4a" tabindex="-1" value="">
                 </div>
             </form>

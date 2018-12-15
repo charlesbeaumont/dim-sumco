@@ -46,3 +46,17 @@
     color: $color-white;
   }
 }
+
+.c-newsletter__submit {
+  background: none;
+  border: 2px solid $color-white;
+  color: $color-white;
+  margin-left: $spacing-small;
+  padding: 0.2rem $spacing-medium;
+  cursor: pointer;
+  font-weight: 500;
+
+  @include mq($until: tablet) {
+    padding: 0 $spacing-medium;
+  }
+}
