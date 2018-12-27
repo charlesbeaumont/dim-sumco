@@ -6,11 +6,17 @@
   font-size: 1.35rem;
   z-index: 600;
   opacity: 0;
+  transition: opacity 0.4s ease-out;
 
   @include mq($until: tablet) {
     left: 1.6rem;
     bottom: 1.6rem;
-    opacity: 1;
+  }
+
+  .is-navigation-active & {
+    @include mq($until: tablet) {
+      opacity: 1;
+    }
   }
 
   a {
