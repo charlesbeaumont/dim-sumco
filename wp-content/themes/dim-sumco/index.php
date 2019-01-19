@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<section class="o-section -spacing-none -fill-height">
+<section class="o-section -spacing-none">
 
 <div class="o-section__border u-fill--grey">
     <div class="o-section__border-inner"></div>

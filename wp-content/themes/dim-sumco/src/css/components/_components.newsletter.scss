@@ -13,8 +13,8 @@
 .c-newsletter__input {
   background: none;
   border: none;
-  border-bottom: 2px solid $color-white;
-  color: $color-white;
+  border-bottom: 2px solid $color-yellow;
+  color: $color-yellow;
   width: 29.6rem;
   font-weight: 500;
   font-size: 2.5rem;
@@ -31,26 +31,26 @@
   }
 
   &::-webkit-input-placeholder {
-    color: $color-white;
+    color: $color-yellow;
   }
 
   &::-moz-placeholder {
-    color: $color-white;
+    color: $color-yellow;
   }
 
   &:-ms-input-placeholder {
-    color: $color-white;
+    color: $color-yellow;
   }
 
   &:-moz-placeholder {
-    color: $color-white;
+    color: $color-yellow;
   }
 }
 
 .c-newsletter__submit {
   background: none;
-  border: 2px solid $color-white;
-  color: $color-white;
+  border: 2px solid $color-yellow;
+  color: $color-yellow;
   margin-left: $spacing-small;
   padding: 0.2rem $spacing-medium;
   cursor: pointer;

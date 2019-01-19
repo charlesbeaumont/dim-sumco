@@ -3,8 +3,8 @@
     <div class="o-section__border -white-logo u-fill--yellow">
         <div class="o-section__border-inner"></div>
     </div>
-    <div class="c-newsletter o-section__content u-fill--yellow u-color--white">
-        <div class="o-section__content-inner">
+    <div class="c-newsletter o-section__content">
+        <div class="o-section__content-inner u-color--yellow">
             <form action="https://dim-sum.us18.list-manage.com/subscribe/post?u=fae074764163adfd55b7a0e69&amp;id=a5fb9a7c4a" method="post" target="_blank">
                 <p class="u-margin-none">
                     Subscribe to our newsletter by

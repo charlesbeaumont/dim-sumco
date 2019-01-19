@@ -1,7 +1,6 @@
 
 .c-hero {
   min-height: 100vh;
-  min-height: calc(100vh - 10rem);
   position: relative;
 
   @include mq($until: tablet) {
@@ -18,7 +17,7 @@
   h3,
   h4,
   h5 {
-    color: $color-yellow;
+    color: $color-white;
     margin-bottom: $spacing-large;
   }
 
@@ -59,6 +58,6 @@
   h3,
   h4,
   h5 {
-    color: $color-grey;
+    color: $color-white;
   }
 }

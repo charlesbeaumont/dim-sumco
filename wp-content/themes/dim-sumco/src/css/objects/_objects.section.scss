@@ -38,8 +38,12 @@
     }
   }
 
-  &.-fill-height {
-    min-height: 100vh;
+  &.-spacing-huge {
+    .o-section__border,
+    .o-section__content {
+      padding-top: $spacing-huge;
+      padding-bottom: $spacing-huge;
+    }
   }
 
   h1,
@@ -118,7 +122,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  font-size: $font-size-small;
+  font-size: $font-size-heading-small;
   background: url('/wp-content/themes/dim-sumco/img/logo-dim-sum-grey.svg') 3.2rem 3.9rem no-repeat, url('/wp-content/themes/dim-sumco/img/text-contact-grey.svg') 3.2rem calc(100% - 3.4rem) no-repeat;
   background-size: 11.8rem auto, 11.8rem auto;
   background-attachment: fixed, fixed;

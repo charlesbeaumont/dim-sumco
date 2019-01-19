@@ -39,7 +39,7 @@ get_header(); ?>
 
     <?php get_template_part( 'inc/work' ); ?>
 
-    <section class="o-section -spacing-xlarge -fill-height">
+    <section class="o-section -spacing-huge">
 
         <div class="o-section__border">
             <div class="o-section__border-inner"></div>
@@ -48,19 +48,19 @@ get_header(); ?>
             <div class="o-section__content-inner rte">
                 <h2 class="o-section__title u-text-small u-margin-bottom-huge u-color--grey u-text-weight-regular" data-reveal>currently in Amsterdam - <span class="u-color--yellow" data-time></span></h2>
 
-                <div class="u-h2" data-reveal>
+                <div class="u-h3" data-reveal>
                     Working on:
                     <div class="c-current__content" style="display: inline-block;"><?php the_field( 'working_on' ); ?></div>
                 </div>
-                <div class="u-h2" data-reveal>
+                <div class="u-h3" data-reveal>
                     Listening to:
                     <div class="c-current__content" style="display: inline-block;"><?php the_field( 'listening_to' ); ?></div>
                 </div>
-                <div class="u-h2" data-reveal>
+                <div class="u-h3" data-reveal>
                     Watching:
                     <div class="c-current__content" style="display: inline-block;"><?php the_field( 'watching' ); ?></div>
                 </div>
-                <div class="u-h2" data-reveal>
+                <div class="u-h3" data-reveal>
                     Reading:
                     <div class="c-current__content" style="display: inline-block;"><?php the_field( 'reading' ); ?></div>
                 </div>
@@ -69,9 +69,9 @@ get_header(); ?>
 
     </section>
 
-    <?php get_template_part( 'inc/journal' ); ?>
-
     <?php get_template_part( 'inc/newsletter' ); ?>
+
+    <?php get_template_part( 'inc/journal' ); ?>
 
     <?php endwhile; ?>
 

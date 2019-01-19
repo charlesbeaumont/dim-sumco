@@ -13,7 +13,7 @@
         <div class="o-section__border -white-logo u-fill--yellow">
 
         </div>
-        <div class="o-section__content u-fill--grey">
+        <div class="o-section__content u-fill--white">
             <div class="c-footer">
                 <div class="c-footer__content">
                     <?php the_field( 'footer', 'option' ); ?>

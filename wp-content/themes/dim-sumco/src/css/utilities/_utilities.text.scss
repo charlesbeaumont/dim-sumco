@@ -5,7 +5,7 @@
 }
 
 .u-text-medium {
-  font-size: $font-size-medium;
+  font-size: $font-size-heading-medium;
 }
 
 .u-text-weight-regular {
@@ -13,7 +13,7 @@
 }
 
 .u-text-large {
-  font-size: $font-size-large;
+  font-size: $font-size-heading-large;
 
   @include mq($until: tablet) {
     font-size: 1.3rem;
@@ -21,5 +21,5 @@
 }
 
 .u-text-xlarge {
-  font-size: $font-size-xlarge;
+  font-size: $font-size-heading-huge;
 }

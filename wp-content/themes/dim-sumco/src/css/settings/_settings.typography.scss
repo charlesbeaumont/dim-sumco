@@ -7,23 +7,26 @@
 $font-family-body: 'graphik-webfont', Helvetica, Arial, sans-serif;
 
 // Font sizes.
-$font-size-small: 1.3rem;
-$font-size-medium: 1.5rem;
-$font-size-large: 1.8rem;
-$font-size-xlarge: 2.5rem;
-$font-size-huge: 3.3rem;
+$font-size-heading-small: 1.5rem;
+$font-size-heading-medium: 2.5rem;
+$font-size-heading-large: 3.25rem;
+$font-size-heading-huge: 4.25rem;
+
+$font-size-body-small: 1.25rem;
+$font-size-body-medium: 1.5rem;
+$font-size-body-large: 2rem;
 
 // Heading sizes.
-$font-size-h1: $font-size-huge;
-$font-size-h2: $font-size-xlarge;
-$font-size-h3: $font-size-large;
-$font-size-h4: $font-size-medium;
-$font-size-h5: $font-size-small;
-$font-size-h6: $font-size-small;
+$font-size-h1: $font-size-heading-huge;
+$font-size-h2: $font-size-heading-large;
+$font-size-h3: $font-size-heading-medium;
+$font-size-h4: $font-size-heading-small;
+$font-size-h5: $font-size-heading-small;
+$font-size-h6: $font-size-heading-small;
 
 // Root font sizes.
-$font-size-root: 10px;
-$font-size-body: $font-size-medium;
+$font-size-root: 62.5%;
+$font-size-body: $font-size-heading-medium;
 
 // Line heights.
 $font-line-height-small: 1.2;
