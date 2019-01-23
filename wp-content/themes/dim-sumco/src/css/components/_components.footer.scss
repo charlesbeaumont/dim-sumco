@@ -6,15 +6,11 @@
 ////
 
 .c-footer {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  font-size: $font-size-heading-small;
   width: 100%;
+  font-size: $font-size-body-small;
 
-  @include mq($until: tablet) {
-    flex-direction: column;
-    align-items: flex-start;
+  @include mq($from: tablet) {
+    align-items: flex-end;
   }
 }
 
@@ -29,7 +25,14 @@
 }
 
 .c-footer__copyright {
-  font-size: $font-size-heading-small;
   margin-bottom: 0;
   font-weight: 400;
+
+  @include mq($until: tablet) {
+    margin-top: $spacing-medium;
+  }
+
+  @include mq($from: tablet) {
+    text-align: right;
+  }
 }

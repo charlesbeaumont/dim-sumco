@@ -7,6 +7,8 @@
 
   @include mq($until: tablet) {
     font-size: 2rem;
+    padding-top: $spacing-medium !important;
+    padding-bottom: 2rem !important;
   }
 }
 
@@ -48,13 +50,13 @@
 }
 
 .c-newsletter__submit {
-  background: none;
-  border: 2px solid $color-yellow;
-  color: $color-yellow;
-  margin-left: $spacing-small;
-  padding: 0.2rem $spacing-medium;
+  background: url('/wp-content/themes/dim-sumco/img/arrow-right-yellow.svg') center center / contain no-repeat;
+  border: none;
   cursor: pointer;
-  font-weight: 500;
+  width: 3rem;
+  height: 2rem;
+  display: inline-block;
+  vertical-align: middle;
 
   @include mq($until: tablet) {
     padding: 0 $spacing-medium;

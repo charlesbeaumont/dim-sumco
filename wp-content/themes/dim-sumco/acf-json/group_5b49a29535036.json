@@ -220,6 +220,63 @@
                     "min": "",
                     "max": ""
                 },
+                "5c4855aab4f4d": {
+                    "key": "5c4855aab4f4d",
+                    "name": "centered",
+                    "label": "Centered Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c4855aab4f4e",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5c4855aab4f4f",
+                            "label": "Color",
+                            "name": "color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "grey-white": "Grey \/ White",
+                                "yellow-grey": "Yellow \/ Grey",
+                                "white-grey": "White \/ Grey",
+                                "grey-yellow": "Grey \/ Yellow",
+                                "yellow-white": "Yellow\/White"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "5b8039c06d2b4": {
                     "key": "5b8039c06d2b4",
                     "name": "quote",
@@ -462,5 +519,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1537012792
+    "modified": 1548244407
 }

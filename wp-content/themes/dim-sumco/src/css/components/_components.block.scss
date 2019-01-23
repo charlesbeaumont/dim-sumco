@@ -1,4 +1,17 @@
 
+.c-block--centered {
+  .o-section__content-inner {
+    width: 66rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: $font-size-body-large;
+    margin-bottom: $spacing-large;
+  }
+}
+
 .c-block--spread {
   img {
     width: 100%;
@@ -20,8 +33,8 @@
   padding: $spacing-large 4.5rem;
 
   @include mq($until: tablet) {
-    padding-left: $spacing-medium;
-    padding-right: $spacing-medium;
+    padding-left: $spacing-large;
+    padding-right: $spacing-large;
   }
 
   &.-light-grey {

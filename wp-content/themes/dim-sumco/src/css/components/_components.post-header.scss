@@ -1,0 +1,30 @@
+.c-post-header__category {
+  font-size: $font-size-body-small !important;
+  margin-bottom: $spacing-medium !important;
+}
+
+.c-post-header__title {
+  color: $color-grey !important;
+}
+
+.c-post-header__author {
+  display: flex;
+  align-items: center;
+  font-size: $font-size-body-small;
+  font-style: italic;
+}
+
+.c-post-header__avatar {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid $color-yellow;
+  margin-right: 2.5rem;
+
+  @include mq($until: tablet) {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.6rem;
+  }
+}

@@ -43,6 +43,11 @@
     .o-section__content {
       padding-top: $spacing-huge;
       padding-bottom: $spacing-huge;
+
+      @include mq($until: tablet) {
+        padding-top: $spacing-xlarge;
+        padding-bottom: $spacing-xlarge;
+      }
     }
   }
 
@@ -138,8 +143,7 @@
   }
 
   @include mq($until: tablet) {
-    width: $spacing-medium;
-    padding: 0;
+    display: none;
   }
 
   &.-center {
@@ -166,8 +170,8 @@
 
   @include mq($until: tablet) {
     width: calc(100% - #{$spacing-medium});
-    padding-left: $spacing-medium;
-    padding-right: $spacing-medium;
+    padding-left: $spacing-large;
+    padding-right: $spacing-large;
   }
 
   &.-flush {
@@ -191,7 +195,7 @@
 
 .o-section__title {
   position: absolute;
-  top: 4.5rem;
+  top: 3.9rem;
   left: 4.5rem;
   z-index: 1000;
 

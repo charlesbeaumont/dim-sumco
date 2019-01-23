@@ -5,6 +5,29 @@
   }
 }
 
+.c-current__header {
+  @include mq($until: tablet) {
+    display: block;
+  }
+}
+
+.c-current__block {
+  font-size: $font-size-heading-medium;
+  font-weight: 500;
+
+  @include mq($until: tablet) {
+    font-size: 1.75rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $spacing-medium;
+  }
+}
+
 .c-current__content {
   display: inline-block;
+
+  p {
+    margin-bottom: 0;
+  }
 }

@@ -49,12 +49,12 @@
   background: url('/wp-content/themes/dim-sumco/img/logo-dim-sum-grey.svg') 3.2rem 3.9rem no-repeat, url('/wp-content/themes/dim-sumco/img/text-contact-grey.svg') 3.2rem calc(100% - 3.4rem) no-repeat;
   background-size: 11.8rem auto, 11.8rem auto;
   background-attachment: fixed, fixed;
-  background-color: $color-grey-light;
+  background-color: $color-white;
   padding-left: 3.2rem;
 
   @include mq($until: tablet) {
     background: none;
-    background-color: $color-grey-light;
+    background-color: $color-white;
     padding: $spacing-large $spacing-medium 8.2rem;
   }
 
@@ -103,13 +103,13 @@
         width: 100%;
         bottom: -2px;
         left: 0;
-        background: $color-yellow;
+        background: $color-grey;
         transition: all 0.3s ease-out;
       }
 
       &::after {
         transform-origin: left center;
-        background: $color-grey;
+        background: $color-yellow;
         transform: scaleX(0);
       }
 

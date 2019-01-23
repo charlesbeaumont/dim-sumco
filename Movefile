@@ -18,13 +18,13 @@ local:
     languages: "/wp-content/languages"
 
 staging:
-  vhost: "https://dim-sum.co"
-  wordpress_path: "/home/forge/dim-sum.co"
+  vhost: "http://dim-sumco.lillehummer.digital"
+  wordpress_path: "/home/forge/dim-sumco.lillehummer.digital"
 
   database:
-    name: "dim_sumco"
-    user: "dim_sumco"
-    password: "2stfigd7LYhxXVBYqvoZ"
+    name: "dim_sumco_staging"
+    user: "dim_sumco_staging"
+    password: "BAxqPA8TJkmzbFrcQg4F"
     host: "localhost"
     # port: "3308" # Use just in case you have exotic server config
 
