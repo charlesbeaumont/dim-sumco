@@ -24,3 +24,9 @@ h4 {
 h5 {
   @include text-h5;
 }
+
+p {
+  @include mq($until: tablet) {
+    font-size: $font-size-body-medium;
+  }
+}

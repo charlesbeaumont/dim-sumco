@@ -33,6 +33,10 @@
   @include text-heading();
   font-size: $font-size-h3;
   line-height: $font-line-height-small;
+
+  @include mq($until: tablet) {
+    font-size: 2.2rem;
+  }
 }
 
 @mixin text-h4() {

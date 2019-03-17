@@ -93,6 +93,10 @@
       &:visited {
         text-decoration: none;
         color: $color-grey;
+
+        @include mq($until: tablet) {
+          border-bottom: 1px solid currentColor;
+        }
       }
 
       &::before,
@@ -105,6 +109,10 @@
         left: 0;
         background: $color-grey;
         transition: all 0.3s ease-out;
+
+        @include mq($until: tablet) {
+          display: none;
+        }
       }
 
       &::after {

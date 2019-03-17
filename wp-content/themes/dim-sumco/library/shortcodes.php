@@ -10,38 +10,21 @@
 add_action( 'init', 'hummer_register_shortcodes' );
 function hummer_register_shortcodes() {
 	add_shortcode( 'button', 'hummer_shortcode_button' );
+	add_shortcode( 'icon', 'hummer_shortcode_icon' );
 }
 
-function hummer_shortcode_button ( $attr, $content, $shortcode_tag ) {
+function hummer_shortcode_button ( $atts, $content, $shortcode_tag ) {
 	$a = shortcode_atts( array(
-        'href' => 'http://',
+        'url' => 'http://',
     ), $atts );
 
-	return '<a href="#" class="button"></a>';
+	return '<a href="' . $a['url'] . '" class="c-button">' . do_shortcode( $content ) . '</a>';
 }
 
-add_action( 'register_shortcode_ui', 'hummer_shortcode_ui_button' );
-function hummer_shortcode_ui_button() {
-	$fields = array(
-		array(
-			'label'  => 'URL',
-			'attr'   => 'href',
-			'type'   => 'url',
-			'meta'   => array(
-				'placeholder' => 'http://',
-			),
-		),
-	);
+function hummer_shortcode_icon ( $atts, $content, $shortcode_tag ) {
+	$a = shortcode_atts( array(
+        'url' => 'http://',
+	), $atts );
 
-	$args = array(
-		'label' => 'Button',
-		'listItemImage' => 'dashicons-editor-quote',
-		// 'post_type' => array( 'post' ),
-		/* 'inner_content' => array(
-			'label'        => 'Button text',
-			'description'  => 'This text will appear between the shortcode.',
-		), */
-		'attrs' => $fields,
-	);
-	shortcode_ui_register_for_shortcode( 'button', $args );
+	return '<div class="c-icon"><div class="c-icon__icon"><img src="' . $a['url'] . '"></div><div class="c-icon__content">' . do_shortcode( $content ) . '</div></div>';
 }

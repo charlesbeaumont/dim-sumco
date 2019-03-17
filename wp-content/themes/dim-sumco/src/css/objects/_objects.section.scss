@@ -90,6 +90,36 @@
   }
 }
 
+.o-section--yellow-yellow {
+  .o-section__border {
+    background-color: $color-yellow;
+  }
+
+  .o-section__content {
+    background-color: $color-yellow;
+    color: $color-white;
+
+    h2 {
+      color: $color-white;
+    }
+  }
+}
+
+.o-section--white-yellow {
+  .o-section__border {
+    background-color: $color-white;
+  }
+
+  .o-section__content {
+    background-color: $color-yellow;
+    color: $color-white;
+
+    h2 {
+      color: $color-white;
+    }
+  }
+}
+
 .o-section--white-grey {
   .o-section__border {
     background-color: $color-white;

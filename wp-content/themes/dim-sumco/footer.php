@@ -25,7 +25,7 @@
                     <a href="https://www.instagram.com/dimsumstrategy/" target="_blank">Instagram</a>
                 </div>
                 <div class="o-grid__cell u-4/12@tablet">
-                    <p class="c-footer__copyright">&copy;2019 dim-sum All right reserved.</p>
+                    <p class="c-footer__copyright">&copy;2019 dim-sum All rights reserved.</p>
                 </div>
             </div>
         </div>

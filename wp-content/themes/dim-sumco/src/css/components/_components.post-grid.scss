@@ -17,7 +17,7 @@
 .c-post-grid__entry {
   width: 50%;
 
-  @include mq($until: tablet) {
+  @include mq($until: 600px) {
     width: 100%;
   }
 }
@@ -54,7 +54,7 @@
   font-weight: 500;
 
   @include mq($until: tablet) {
-    padding: $spacing-medium $spacing-large 1.8rem;
+    padding: $spacing-medium $spacing-medium 1.8rem;
     font-size: 1.3rem;
   }
 }

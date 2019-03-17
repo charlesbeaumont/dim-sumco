@@ -11,11 +11,11 @@ get_header(); ?>
 
 <section class="o-section -spacing-xlarge">
 
-<div class="o-section__border -white-logo u-fill--yellow">
+<div class="o-section__border -white-logo u-fill--grey">
     <div class="o-section__border-inner"></div>
 </div>
 <div class="c-work-grid__wrapper o-section__content">
-    <h2 class="o-section__title u-text-small u-color--grey u-text-weight-regular" data-reveal>work</h2>
+    <h2 class="o-section__title u-text-small u-color--grey u-text-weight-regular" data-reveal>selected work</h2>
     <div class="c-work-grid" data-work-grid>
         <div class="c-work-grid__background o-background-image -contain" data-work-grid-background></div>
         <?php while ( have_posts() ) : the_post(); ?>

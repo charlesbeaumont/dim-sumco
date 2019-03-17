@@ -45,9 +45,9 @@ get_header(); ?>
 
     <?php endwhile; ?>
 
-    <?php get_template_part( 'inc/work' ); ?>
+    <?php get_template_part( 'inc/blocks/work' ); ?>
 
-    <?php get_template_part( 'inc/newsletter' ); ?>
+    <?php get_template_part( 'inc/blocks/newsletter' ); ?>
 
 </main>
 

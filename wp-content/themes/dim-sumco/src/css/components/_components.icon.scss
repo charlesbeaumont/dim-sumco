@@ -1,0 +1,16 @@
+
+.c-icon {
+  display: flex;
+  align-items: flex-start;
+  margin: $spacing-large 0;
+}
+
+.c-icon__icon {
+  width: 10rem;
+  height: auto;
+  margin-right: $spacing-medium;
+}
+
+.c-icon__content {
+  flex: 1;
+}

@@ -15,8 +15,14 @@
             ?>
 
             <?php while ( $entries->have_posts() ) : $entries->the_post(); ?>
-            <?php $image = get_field( 'case_background' ); ?>
             <div class="c-work-grid__entry" data-reveal>
+                <?php
+                if ( get_field( 'case_hover_image' ) ) :
+                    $image = get_field( 'case_hover_image' );
+                else :
+                    $image = get_field( 'case_background' );
+                endif;
+                ?>
                 <a href="<?php the_permalink(); ?>" class="c-work-grid__link" data-work-grid-thumbnail="<?php echo $image['sizes']['medium']; ?>" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>');">
                 </a>
             </div>

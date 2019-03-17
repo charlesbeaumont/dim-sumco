@@ -80,7 +80,7 @@ get_header();
 
     <?php endwhile; ?>
 
-    <?php get_template_part( 'inc/journal' ); ?>
+    <?php get_template_part( 'inc/blocks/journal' ); ?>
 
 </main>
 

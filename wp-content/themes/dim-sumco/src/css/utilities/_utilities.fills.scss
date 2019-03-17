@@ -4,19 +4,23 @@
  */
 
 .u-fill--primary {
-  background-color: $color-primary;
+  background-color: $color-primary !important;
 }
 
 .u-fill--yellow {
-  background-color: $color-yellow;
+  background-color: $color-yellow !important;
+}
+
+.u-fill--light-grey {
+  background-color: $color-white-off !important;
 }
 
 .u-fill--grey {
-  background-color: $color-grey-light;
+  background-color: $color-grey-light !important;
 }
 
 .u-fill--white {
-  background-color: $color-white;
+  background-color: $color-white !important;
 }
 
 .u-color--white {

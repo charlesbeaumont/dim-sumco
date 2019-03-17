@@ -1,0 +1,24 @@
+
+.c-button {
+  border-radius: 0.3rem;
+  padding: 0.9rem 1rem 1.1rem;
+  font-weight: 500;
+  margin: $spacing-small 0;
+  display: inline-block;
+  transition: all 0.3s ease-out;
+
+  &,
+  &:link,
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: $color-white;
+    background: $color-yellow;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background: darken($color-yellow, 10%);
+  }
+}

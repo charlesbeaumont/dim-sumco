@@ -71,7 +71,7 @@ function hummer_rss_dashboard_widget() {
 function hummer_custom_dashboard_widgets() {
 	wp_add_dashboard_widget( 'hummer_rss_dashboard_widget', 'News from Lille Hummer', 'hummer_rss_dashboard_widget' );
 }
-add_action( 'wp_dashboard_setup', 'hummer_custom_dashboard_widgets' );
+// add_action( 'wp_dashboard_setup', 'hummer_custom_dashboard_widgets' );
 
 /**
  * Enqueue login styles.

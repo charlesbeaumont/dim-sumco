@@ -206,7 +206,9 @@
                                 "yellow-grey": "Yellow \/ Grey",
                                 "white-grey": "White \/ Grey",
                                 "grey-yellow": "Grey \/ Yellow",
-                                "yellow-white": "Yellow\/White"
+                                "yellow-white": "Yellow\/White",
+                                "yellow-yellow": "Yellow\/Yellow",
+                                "white-yellow": "White\/Yellow"
                             },
                             "default_value": [],
                             "allow_null": 0,
@@ -263,7 +265,9 @@
                                 "yellow-grey": "Yellow \/ Grey",
                                 "white-grey": "White \/ Grey",
                                 "grey-yellow": "Grey \/ Yellow",
-                                "yellow-white": "Yellow\/White"
+                                "yellow-white": "Yellow\/White",
+                                "yellow-yellow": "Yellow\/Yellow",
+                                "white-yellow": "White\/Yellow"
                             },
                             "default_value": [],
                             "allow_null": 0,
@@ -474,6 +478,42 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5c8e4a012147b": {
+                    "key": "5c8e4a012147b",
+                    "name": "newsletter",
+                    "label": "Newsletter",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "5c8e4a062147c": {
+                    "key": "5c8e4a062147c",
+                    "name": "work",
+                    "label": "Work",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "5c8e4a0c2147d": {
+                    "key": "5c8e4a0c2147d",
+                    "name": "current",
+                    "label": "Current",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "5c8e4a112147e": {
+                    "key": "5c8e4a112147e",
+                    "name": "journal",
+                    "label": "Journal",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -487,11 +527,6 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "page"
-            },
-            {
-                "param": "post_template",
-                "operator": "!=",
-                "value": "page-home.php"
             }
         ],
         [
@@ -519,5 +554,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1548244407
+    "modified": 1552828953
 }
