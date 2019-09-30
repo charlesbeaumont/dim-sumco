@@ -71,7 +71,7 @@ get_header();
                 <div class="o-section__content-inner rte" data-reveal>
                     <div class="c-post-header__author">
                         <div class="c-post-header__avatar o-background-image" style="background-image: url('<?php echo $author_avatar['sizes']['thumbnail'] ?>');"></div>
-                        By <?php echo get_the_author_meta( 'display_name' ); ?>
+                        <?php _e( 'By', 'dim-sumco' ); ?> <?php echo get_the_author_meta( 'display_name' ); ?>
                         - <?php echo get_the_date( 'F j, Y' ); ?>
                     </div>
                 </div>

@@ -17,6 +17,7 @@
   }
 }
 
+
 .c-navigation__topbar {
   position: fixed;
   top: 0;
@@ -30,6 +31,16 @@
   @include mq($until: tablet) {
     display: block;
   }
+}
+
+.c-navigation__actions {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 3.2rem;
+  top: 4.2rem;
+  height: 2.6rem;
+  z-index: 600;
 }
 
 .c-navigation__menu {
@@ -136,4 +147,21 @@
   }
 }
 
+.c-navigation__languages {
+  margin-right: 1.8rem;
 
+  a {
+    &,
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    &.c-navigation__active-language {
+      border-bottom: 1px solid currentColor;
+    }
+  }
+}

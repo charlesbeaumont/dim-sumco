@@ -7,8 +7,8 @@
         <div class="o-section__content-inner u-color--yellow">
             <form action="https://dim-sum.us18.list-manage.com/subscribe/post?u=fae074764163adfd55b7a0e69&amp;id=a5fb9a7c4a" method="post" target="_blank">
                 <p class="u-margin-none">
-                    Subscribe to our newsletter by
-                    <input class="c-newsletter__input" type="email" placeholder="entering your email here" name="EMAIL">
+                    <?php _e( 'Subscribe to our newsletter by', 'dim-sumco' ); ?>
+                    <input class="c-newsletter__input" type="email" placeholder="<?php _e( 'entering your email here', 'dim-sumco' ); ?>" name="EMAIL">
                     <button class="c-newsletter__submit" type="submit" value="subscribe"/></button>
                 </p>
                 <div style="position: absolute; left: -5000px;" aria-hidden="true">

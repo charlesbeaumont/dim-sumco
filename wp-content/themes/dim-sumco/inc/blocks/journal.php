@@ -5,7 +5,7 @@
     </div>
     <div class="o-section__content u-fill--grey">
         <div class="o-section__content-inner -large">
-            <h2 class="o-section__title u-text-small u-margin-top-large@mobile u-color--grey" data-reveal>Latest from our journal</h2>
+            <h2 class="o-section__title u-text-small u-margin-top-large@mobile u-color--grey" data-reveal><?php _e( 'Latest from our journal', 'dim-sumco' ); ?></h2>
         </div>
 
         <div class="c-post-grid">

@@ -42,7 +42,7 @@ staging:
     - "node_modules"
     - "bower"
     - ".DS_Store"
-    - "src"
+    # - "src"
     - ".sublime-gulp.cache"
     - "bower.json"
     - "package.json"

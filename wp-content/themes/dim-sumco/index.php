@@ -16,7 +16,7 @@ get_header(); ?>
 </div>
 <div class="o-section__content">
     <div class="o-section__content-inner -large">
-        <h2 class="o-section__title u-text-small u-margin-top-large@mobile u-color--grey u-text-weight-regular" data-reveal>latest from our journal</h2>
+        <h2 class="o-section__title u-text-small u-margin-top-large@mobile u-color--grey u-text-weight-regular" data-reveal><?php _e( 'latest from our journal', 'dim-sumco' ); ?></h2>
     </div>
 
     <div class="c-post-grid">
@@ -35,7 +35,7 @@ get_header(); ?>
             <?php endif; ?>
             <div class="c-post-grid__title rte">
                 <div class="u-color--yellow"><?php the_title(); ?></div>
-                <a href="<?php the_permalink(); ?>" class="u-text-weight-regular">Read more</a>
+                <a href="<?php the_permalink(); ?>" class="u-text-weight-regular"><?php _e( 'Read more', 'dim-sumco' ); ?></a>
             </div>
         </div>
         <?php endwhile; ?>
