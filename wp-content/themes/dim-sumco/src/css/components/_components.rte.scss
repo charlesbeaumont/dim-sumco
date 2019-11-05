@@ -1,4 +1,8 @@
 .rte {
+  & > *:first-child {
+    margin-top: 0;
+  }
+
   & > *:last-child {
     margin-bottom: 0;
   }
@@ -66,5 +70,21 @@
       content: '';
       background: $color-yellow;
     }
+  }
+
+  .wp-caption {
+    max-width: 100%;
+    text-align: left;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.rte--post {
+  h3 {
+    margin-top: $spacing-xlarge;
   }
 }
