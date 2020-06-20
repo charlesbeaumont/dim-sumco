@@ -31,13 +31,7 @@
 
 .c-block__column {
   flex: 1;
-  padding: $spacing-large 4.5rem;
-  width: 50%;
-
-  @include mq($until: tablet) {
-    padding-left: $spacing-large;
-    padding-right: $spacing-large;
-  }
+  min-width: 50%;
 
   &.-light-grey {
     background: rgba($color-grey-light, 0.3);
@@ -54,6 +48,15 @@
 }
 
 .c-block__column-inner {
+  padding: $spacing-large 4.5rem;
+
+  @include mq($until: tablet) {
+    padding-left: $spacing-large;
+    padding-right: $spacing-large;
+  }
+}
+
+.c-block__column-content {
   width: 100%;
   max-width: 50rem;
 }

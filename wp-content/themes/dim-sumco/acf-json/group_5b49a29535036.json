@@ -92,6 +92,30 @@
                             "button_label": "Add Column",
                             "sub_fields": [
                                 {
+                                    "key": "field_5eee0a46d783d",
+                                    "label": "Image",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
                                     "key": "field_5b851d5dcf22c",
                                     "label": "Content",
                                     "name": "content",
@@ -155,7 +179,7 @@
                                 "field_5b49a543000c6"
                             ],
                             "display": "seamless",
-                            "layout": "block",
+                            "layout": "",
                             "prefix_label": 0,
                             "prefix_name": 0
                         }
@@ -554,5 +578,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1552828953
+    "modified": 1592658644
 }
