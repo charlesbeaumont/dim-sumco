@@ -21,6 +21,7 @@
 
 .c-block__columns {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 
   @include mq($until: tablet) {
@@ -31,6 +32,7 @@
 .c-block__column {
   flex: 1;
   padding: $spacing-large 4.5rem;
+  width: 50%;
 
   @include mq($until: tablet) {
     padding-left: $spacing-large;
@@ -43,6 +45,11 @@
 
   &.-grey {
     background: $color-grey-light;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
