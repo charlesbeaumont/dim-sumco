@@ -51,11 +51,11 @@
     </div>
 
     <div class="c-navigation__actions">
-        <div class="c-navigation__languages">
+        <!-- <div class="c-navigation__languages">
             <a href="<?php echo home_url(); ?>" <?php if (ICL_LANGUAGE_CODE == "en") : ?>class="c-navigation__active-language"<?php endif; ?>>EN</a>
             /
             <a href="<?php echo home_url(); ?>/nl" <?php if (ICL_LANGUAGE_CODE == "nl") : ?>class="c-navigation__active-language"<?php endif; ?>>NL</a>
-        </div>
+        </div> -->
 
         <button class="c-hamburger" type="button" data-navigation-toggle></button>
     </div>

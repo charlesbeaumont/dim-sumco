@@ -61,7 +61,9 @@ get_header();
             </div>
         </section>
 
-        <?php get_template_part( 'inc/blocks' ); ?>
+        <div class="rte--post">
+            <?php get_template_part( 'inc/blocks' ); ?>
+        </div>
 
         <section class="o-section o-section--yellow-white -spacing-xlarge c-block c-block--centered">
             <div class="o-section__border <?php if ( get_sub_field( 'color' ) == 'yellow-grey' || get_sub_field( 'color' ) == 'yellow-white') : ?>-white-logo<?php endif; ?>">
