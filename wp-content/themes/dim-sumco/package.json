@@ -61,7 +61,7 @@
     "lodash": "*",
     "mini-css-extract-plugin": "*",
     "modernizr": "*",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "normalize.css": "*",
     "optimize-css-assets-webpack-plugin": "*",
     "postcss-loader": "*",
